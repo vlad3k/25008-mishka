@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header class="page-header">
+        <div class="page-header__logo">
+          <img src="http://placehold.it/150x100" alt="Магазин игрушек «Мишка»">
+        </div>
+          <nav class="main-nav main-nav--closed">
+            <button class="page-nav__toggle">Открыть меню</button>
+            <ul class="page-nav__items">
+              <li class="page-nav__item"><a href="#">Каталог товаров</a></li>
+              <li class="page-nav__item"><a href="#">Вязание на заказ</a></li>
+              <li class="page-nav__item"><a href="#">Поиск по сайту</a></li>
+              <li class="page-nav__item"><a href="#">Корзина: пока пуста</a></li>
+            </ul>
+          </nav>
+      </header>
+
+      <main>
+
+        <section class="total-header">
+
+          <h1 class="total-header__title">Вязание на заказ</h1>
+
+        </section>
+
+        <section class="knitting-order">
+
+          <p class="knitting-order__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+          <form action="https://echo.htmlacademy.ru/">
+
+            <div class="knitting-order__wrapper">
+
+              <fieldset class="knitting-order__type">
+
+                <legend class="knitting-order__title">Тип</legend>
+
+                <ul class="knitting-order-list">
+
+                  <li class="knitting-order-list__item">
+                    <label class="knitting-order-list__label" for="accessories">Аксессуар для интерьера</label>
+                    <input class="knitting-order-list__input" id="accessories" type="radio" name="type" checked>
+                  </li>
+
+                  <li class="knitting-order-list__item">
+                    <label class="knitting-order-list__label" for="toy">Детская игрушка</label>
+                    <input class="knitting-order-list__input" id="toy" type="radio" name="type">
+                  </li>
+
+                </ul>
+
+              </fieldset>
+
+              <fieldset class="knitting-order__color">
+
+                <legend class="knitting-order__title">Цвет</legend>
+
+                <ul class="knitting-order-list">
+
+                  <li class="knitting-order-list__item">
+                    <label class="knitting-order-list__label" for="color-white">Белый</label>
+                    <input class="knitting-order-list__input" id="color-white" type="checkbox" name="white" checked>
+                  </li>
+
+                  <li class="knitting-order-list__item">
+                    <label class="knitting-order-list__label" for="color-gray">Серый</label>
+                    <input class="knitting-order-list__input" id="color-gray" type="checkbox" name="gray" checked>
+                  </li>
+
+                  <li class="knitting-order-list__item">
+                    <label class="knitting-order-list__label" for="color-tiffany">«Тиффани»</label>
+                    <input class="knitting-order-list__input" id="color-tiffany" type="checkbox" name="tiffany">
+                  </li>
+
+                  <li class="knitting-order-list__item">
+                    <label class="knitting-order-list__label" for="color-black">Черный</label>
+                    <input class="knitting-order-list__input" id="color-black" type="checkbox" name="black">
+                  </li>
+
+                  <li class="knitting-order-list__item">
+                    <label class="knitting-order-list__label" for="color-pink">Розовый</label>
+                    <input class="knitting-order-list__input" id="color-pink" type="checkbox" name="pink">
+                  </li>
+
+                  <li class="knitting-order-list__item">
+                    <label class="knitting-order-list__label" for="color-orange">Оранжевый</label>
+                    <input class="knitting-order-list__input" id="color-orange" type="checkbox" name="orange">
+                  </li>
+
+                </ul>
+
+              </fieldset>
+
+              <fieldset class="knitting-order__name">
+
+               <legend class="knitting-order__title">Фио</legend>
+
+                <ul class="knitting-order-list">
+
+                  <li class="knitting-order-item">
+                    <label class="knitting-order-list__label" for="firstname">Имя</label>
+                    <input class="knitting-order-list__input" id="firstname" type="text" name="firstname"  placeholder="Введите ваше имя*">
+                  </li>
+
+                  <li class="knitting-order-item">
+                    <label  class="knitting-order-list__label" for="lastname">Фамилия</label>
+                    <input  class="knitting-order-list__input" id="lastname" type="text" name="lastname" placeholder="Укажите фамилию*">
+                  </li>
+
+                  <li class="knitting-order-item">
+                    <label class="knitting-order-list__label" for="patronymic">Отчество</label>
+                    <input class="knitting-order-list__input" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
+                  </li>
+
+                </ul>
+
+              </fieldset>
+
+              <fieldset class="knitting-order__phone">
+
+                <legend class="knitting-order__title">Тел</legend>
+
+                <div class="knitting-order-list__text-container">
+                  <input class="knitting-order-list__phone-number" id="phone-number" type="text" placeholder="+7 ХХХ ХХ ХХ*">
+                </div>
+
+              </fieldset>
+
+              <fieldset class="knitting-order__email">
+
+                <legend class="knitting-order__title">E-mail</legend>
+
+                <div class="knitting-order-list__text-container">
+                  <input class="knitting-order__email" id="email" type="email" placeholder="Ваш Email*">
+                </div>
+
+              </fieldset>
+
+              <fieldset class="knitting-order__extra">
+
+                <legend class="knitting-order__title">Доп</legend>
+
+                <textarea class="knitting-order-list__textarea" id="extra" name="exta" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+
+              </fieldset>
+
+              <div class="knitting-order__bottom">
+                <span class="knitting-order__text">*Поля обязательны для заполнения</span>
+                <button class="btn">Отправить заказ</button>
+              </div>
+
+            </div>
+          </form>
+
+        </section>
+
+
+      </main>
+
+      <footer class="page-footer">
+
+        <div class="page-footer__social">
+          <a class="page-footer__social-link" href="#"></a>
+          <a class="page-footer__social-link" href="#"></a>
+          <a class="page-footer__social-link" href="#"></a>
+        </div>
+
+        <div class="page-footer__copyright">
+          <span class="page-footer__text">Разработано</span>
+          <a class="page-footer__link" href="#"></a>
+        </div>
+
+      </footer>
+
+    </div>
+
+  </body>
+
+</html>
