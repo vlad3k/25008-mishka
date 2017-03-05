@@ -101,7 +101,9 @@
               <span class="about-us__desc">Поддержка отечественного производителя</span>
             </li>
             <li class="about-us__item">
-              <img class="about-us__img" src="http://placehold.it/150x100" alt="">
+              <div class="about-us__img">
+                <img src="http://placehold.it/150x100" alt="">
+              </div>
               <span class="about-us__desc">Поставляется в подарочной упаковке</span>
             </li>
          </ul>
@@ -112,11 +114,11 @@
 
           <h2 class="reviews__title">Отзывы</h2>
 
-          <div class="reviews__item">
+          <blockquote class="reviews__item">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <span class="reviews__author">Анастасия Красильникова</span>
-            <span>@misssssiskras</span>
-          </div>
+            <cite>@misssssiskras</cite>
+          </blockquote>
 
           <div class="reviews__arrows">
             <button class="reviews__arrow reviews__arrow--left">Влево</button>
@@ -167,6 +169,16 @@
 
       </footer>
 
+      <div class="popup">
+        <h2 class="popup__title">Добавить в корзину</h2>
+        <span class="popup__text">Выберите размер:</span>
+        <label class="popup__size" for=""><input type="radio" id="s" name="size" checked>S</label>
+        <label class="popup__size" for=""><input type="radio" id="m" name="size">M</label>
+        <label class="popup__size" for=""><input type="radio" id="l" name="size">L</label>
+        <button class="btn">Добавить</button>
+      </div>
+
     </div>
+
   </body>
 </html>
