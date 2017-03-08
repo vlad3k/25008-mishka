@@ -1,0 +1,28 @@
+.page-footer {
+  padding-top: 22px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: $color-bg-gray;
+
+  &__social {
+    padding-left: 58px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &__social-link {
+    padding-right: 36px;
+  }
+
+  &__copyright {
+    padding-top: 21px;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    font-family: "OpenSans bold";
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 3px;
+  }
+}

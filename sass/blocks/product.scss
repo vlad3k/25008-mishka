@@ -1,0 +1,53 @@
+.product {
+  margin-bottom: 30px;
+  border: 1px solid #ededed;
+  box-sizing: border-box;
+
+  &__text {
+    padding-top: 23px;
+    padding-bottom: 19px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-bottom: 1px solid #ededed;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-family: "OpenSans bold";
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  &__properties {
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  &__prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 26px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__price {
+    margin-top: 1px;
+    margin-left: -2px;
+    font-family: "OpenSans bold";
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  &__basket {
+    margin-right: -10px;
+    background: $color-white;
+    border: none;
+  }
+}

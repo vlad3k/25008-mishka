@@ -1,0 +1,43 @@
+.contacts {
+  padding-top: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+
+  &__title {
+    margin-bottom: 27px;
+    font-family: "OpenSans bold";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__items {
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: $color-light-text;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+
+  &__address {
+    margin-left: 30px;
+  }
+
+  &__map {
+    margin-bottom: 35px;
+    padding-top: 7px;
+    margin-left: -30px;
+  }
+
+  .btn {
+    padding: 14px 10px;
+    width: 100%;
+  }
+}

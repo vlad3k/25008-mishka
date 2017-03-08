@@ -1,0 +1,77 @@
+.product-week {
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+
+  &__title {
+    margin-bottom: 4px;
+    padding-left: 1px;
+    font-family: "OpenSans bold";
+    font-size: 25px;
+  }
+
+  &__label {
+    font-family: "OpenSans bold";
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color-light-green;
+  }
+
+  &__desc {
+    margin-top: 22px;
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  &__properties {
+    margin-top: 17px;
+    font-family: "OpenSans";
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &__property {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid $color-gray;
+  }
+
+  &__property-name {
+    display: block;
+    width: 90px;
+    box-sizing: border-box;
+  }
+
+  &__property-value {
+    padding-left: 7px;
+  }
+
+  &__img {
+    margin-top: 29px;
+  }
+
+  &__order {
+    margin-top: 20px;
+  }
+
+  &__price {
+    display: block;
+    margin: 15px 0;
+    margin-bottom: 26px;
+    font-family: "OpenSans bold";
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: $color-light-text;
+    text-align: center;
+  }
+
+}

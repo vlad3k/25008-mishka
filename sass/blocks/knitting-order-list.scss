@@ -1,0 +1,42 @@
+.knitting-order-list {
+
+  &__item {
+    padding-left: 63px;
+    margin-bottom: 22px;
+  }
+
+  &__label {
+    margin-bottom: 20px;
+    font-family: "OpenSans bold";
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: $color-black;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__text {
+    display: block;
+    min-height: 50px;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid $color-black;
+    box-sizing: border-box;
+  }
+  
+  &__textarea {
+    box-sizing: border-box;
+    height: 142px;
+    width: 100%;
+    margin-top: 35px;
+    padding: 15px;
+    border: 2px solid $color-light-text;
+    background-color: #fff;
+    resize: none;
+  }
+  
+}

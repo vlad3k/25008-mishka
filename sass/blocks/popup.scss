@@ -1,0 +1,41 @@
+.popup {
+  padding-left: 30px;
+  padding-right: 30px;
+  
+  &__title {
+    margin-bottom: 12px;
+    font-family: "OpenSans bold";
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  &__text {
+    display: block;
+    margin-bottom: 30px;
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  &__size {
+    margin-bottom: 30px;
+    padding: 20px 34px;
+    font-family: "OpenSans bold";
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    color: $color-light-text;
+    box-sizing: border-box;
+    border: 2px solid $color-light-green;
+  }
+  
+  input {
+    display: none;
+  }
+
+}

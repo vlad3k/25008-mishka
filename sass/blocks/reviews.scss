@@ -1,0 +1,64 @@
+.reviews {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+
+  &__title {
+    margin-bottom: 25px;
+    font-family: "OpenSans bold";
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: $color-light-text;
+    letter-spacing: 0.61px;
+  }
+
+  &__author {
+    font-family: "OpenSans bold";
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+  }
+
+  &__link {
+    display: block;
+    margin-top: 3px;
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  &__arrows {
+    margin-top: 30px;
+    margin-bottom: 38px;
+    font-size: 0;
+  }
+
+  &__arrow {
+    display: inline-block;
+    width: 130px;
+    height: 52px;
+    background-color: $color-white;
+    border: 1px solid $color-gray;
+    vertical-align: top;
+  }
+
+  &__arrow--right {
+    border-left: none;
+  }
+}

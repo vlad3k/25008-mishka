@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
@@ -9,15 +10,17 @@
 
       <header class="page-header">
         <div class="page-header__logo">
-          <img src="http://placehold.it/150x100" alt="Магазин игрушек «Мишка»">
+          <img src="img/logo-mobile.svg" alt="Магазин игрушек «Мишка»">
         </div>
-          <nav class="main-nav main-nav--closed">
-            <button class="page-nav__toggle">Открыть меню</button>
+          <nav class="page-nav page-nav--closed">
+            <button class="page-nav__toggle">
+              <span class="page-nav__menu-hamburger"></span>
+            </button>
             <ul class="page-nav__items">
-              <li class="page-nav__item"><a href="#">Каталог товаров</a></li>
-              <li class="page-nav__item"><a href="#">Вязание на заказ</a></li>
-              <li class="page-nav__item"><a href="#">Поиск по сайту</a></li>
-              <li class="page-nav__item"><a href="#">Корзина: пока пуста</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="catalog.html">Каталог товаров</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="form.html">Вязание на заказ</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="#">Поиск по сайту</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="#">Корзина: пока пуста</a></li>
             </ul>
           </nav>
       </header>
@@ -26,15 +29,15 @@
 
         <section class="main-header">
 
-          <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+          <h1 class="main-header__title">Милые штуки ручной<br> работы для дома</h1>
 
         </section>
 
         <section class="categories-nav">
 
           <ul class="categories-nav__items">
-            <li class="categories-nav__item"><a href="#">Предметы интерьера</a></li>
-            <li class="categories-nav__item"><a href="#">Детские игрушки</a></li>
+            <li class="categories-nav__item"><a class="categories-nav__link categories-nav__link--interior" href="#">Предметы<br> интерьера</a></li>
+            <li class="categories-nav__item"><a class="categories-nav__link categories-nav__link--toys" href="#">Детские<br> игрушки</a></li>
           </ul>
 
         </section>
@@ -43,29 +46,29 @@
 
           <div class="product-week__titles">
             <h2 class="product-week__title">Вязаные корзинки</h2>
-            <span class="product-week__title">Товар недели</span>
+            <span class="product-week__label">Товар недели</span>
           </div>
 
           <div class="product-week__descs">
             <p class="product-week__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <ul class="product-week__properties">
               <li class="product-week__property">
-                <span class="product-week__property-name">Цвет</span>
+                <span class="product-week__property-name">Цвет:</span>
                 <span class="product-week__property-value">«Тиффани»/серый</span>
               </li>
               <li class="product-week__property">
-                <span class="product-week__property-name">Диаметр</span>
+                <span class="product-week__property-name">Диаметр:</span>
                 <span class="product-week__property-value">25 см</span>
               </li>
               <li class="product-week__property">
-                <span class="product-week__property-name">Высота</span>
+                <span class="product-week__property-name">Высота:</span>
                 <span class="product-week__property-value">15 см</span>
               </li>
             </ul>
           </div>
 
           <div class="product-week__img">
-            <img src="http://placehold.it/150x100" alt="Вязаные корзинки">
+            <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
           </div>
 
           <div class="product-week__order">
@@ -81,28 +84,38 @@
 
           <ul class="about-us__items">
             <li class="about-us__item">
-              <img class="about-us__img" src="http://placehold.it/150x100" alt="">
+              <div class="about-us__img">
+                <img src="img/icon-feature-1.svg" alt="">
+              </div>
               <span class="about-us__desc">Экологически чистые материалы</span>
             </li>
             <li class="about-us__item">
-              <img class="about-us__img" src="http://placehold.it/150x100" alt="">
+              <div class="about-us__img">
+                <img src="img/icon-feature-3.svg" alt="">
+              </div>
               <span class="about-us__desc">Скандинавский стиль по российской цене</span>
             </li>
             <li class="about-us__item">
-              <img class="about-us__img" src="http://placehold.it/150x100" alt="">
+              <div class="about-us__img">
+                <img src="img/icon-feature-5.svg" alt="">
+              </div>
               <span class="about-us__desc">Увеличивает лайкина фотографиях</span>
             </li>
             <li class="about-us__item">
-              <img class="about-us__img" src="http://placehold.it/150x100" alt="">
+              <div class="about-us__img">
+                <img src="img/icon-feature-2.svg" alt="">
+              </div>
               <span class="about-us__desc">Связано вручную с любовью и умилением</span>
             </li>
             <li class="about-us__item">
-              <img class="about-us__img" src="http://placehold.it/150x100" alt="">
+              <div class="about-us__img">
+                <img src="img/icon-feature-4.svg" alt="">
+              </div>
               <span class="about-us__desc">Поддержка отечественного производителя</span>
             </li>
             <li class="about-us__item">
               <div class="about-us__img">
-                <img src="http://placehold.it/150x100" alt="">
+                <img src="img/icon-feature-6.svg" alt="">
               </div>
               <span class="about-us__desc">Поставляется в подарочной упаковке</span>
             </li>
@@ -117,12 +130,16 @@
           <blockquote class="reviews__item">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <span class="reviews__author">Анастасия Красильникова</span>
-            <cite>@misssssiskras</cite>
+            <cite class="reviews__link">@misssssiskras</cite>
           </blockquote>
 
           <div class="reviews__arrows">
-            <button class="reviews__arrow reviews__arrow--left">Влево</button>
-            <button class="reviews__arrow reviews__arrow--right">Вправо</button>
+            <button class="reviews__arrow reviews__arrow--left">
+              <img src="/img/icon-left-arrow.svg" alt="Влево">
+            </button>
+            <button class="reviews__arrow reviews__arrow--right">
+              <img src="/img/icon-right-arrow.svg" alt="Вправо">
+            </button>
           </div>
 
           <button class="btn">Написать</button>
@@ -140,12 +157,12 @@
             </li>
             <li class="contacts__item">
               <span class="contacts__name">адрес:</span>
-              <span class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+              <span class="contacts__address">г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101</span>
             </li>
           </ul>
 
           <div class="contacts__map">
-
+            <img src="/img/map-mobile@1x.jpg" alt="Карта">
           </div>
 
           <button class="btn">Напишите нам</button>
@@ -156,16 +173,16 @@
 
       <footer class="page-footer">
 
-        <div class="page-footer__social">
-          <a class="page-footer__social-link" href="#"></a>
-          <a class="page-footer__social-link" href="#"></a>
-          <a class="page-footer__social-link" href="#"></a>
-        </div>
+          <div class="page-footer__social">
+            <a class="page-footer__social-link" href="#"><img src="/img/icon-insta.svg" alt="Инстаграм"></a>
+            <a class="page-footer__social-link" href="#"><img src="/img/icon-fb.svg" alt="Инстаграм"></a>
+            <a class="page-footer__social-link" href="#"><img src="/img/icon-twitter.svg" alt="Инстаграм"></a>
+          </div>
 
-        <div class="page-footer__copyright">
-          <span class="page-footer__text">Разработано</span>
-          <a class="page-footer__link" href="#"></a>
-        </div>
+          <div class="page-footer__copyright">
+            <span class="page-footer__text">Разработано</span>
+            <a class="page-footer__link" href="#"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy"></a>
+          </div>
 
       </footer>
 

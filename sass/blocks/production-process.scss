@@ -1,0 +1,48 @@
+.production-process {
+  margin-bottom: 58px;
+  padding-bottom: 32px;
+  border: 1px solid #ededed;
+  box-sizing: border-box;
+
+  &__title-container {
+    padding-top: 25px;
+    padding-bottom: 24px;
+    padding-left: 90px;
+  }
+
+  &__title {
+    position: relative;
+    font-family: "OpenSans bold";
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -57px;
+      width: 32px;
+      height: 34px;
+      background-image: url(../img/icon-video.svg);
+    }
+  }
+
+  &__container {
+    padding-top: 22px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  &__desc {
+    margin-bottom: 26px;
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .btn {
+    padding: 14px;
+    width: 100%;
+  }
+}
