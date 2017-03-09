@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
 
@@ -12,15 +13,17 @@
 
       <header class="page-header">
         <div class="page-header__logo">
-          <img src="http://placehold.it/150x100" alt="Магазин игрушек «Мишка»">
+          <img src="img/logo-mobile.svg" alt="Магазин игрушек «Мишка»">
         </div>
-          <nav class="main-nav main-nav--closed">
-            <button class="page-nav__toggle">Открыть меню</button>
+          <nav class="page-nav page-nav--closed">
+            <button class="page-nav__toggle">
+              <span class="page-nav__menu-hamburger"></span>
+            </button>
             <ul class="page-nav__items">
-              <li class="page-nav__item"><a href="#">Каталог товаров</a></li>
-              <li class="page-nav__item"><a href="#">Вязание на заказ</a></li>
-              <li class="page-nav__item"><a href="#">Поиск по сайту</a></li>
-              <li class="page-nav__item"><a href="#">Корзина: пока пуста</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="catalog.html">Каталог товаров</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="form.html">Вязание на заказ</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="#">Поиск по сайту</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="#">Корзина: пока пуста</a></li>
             </ul>
           </nav>
       </header>
@@ -35,10 +38,10 @@
 
         <section class="catalog-items">
 
-          <article class="catalog-item">
+          <article class="product">
 
-            <div class="product">
-              <img src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
+            <div class="product__img">
+              <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
             </div>
 
             <div class="product__container">
@@ -50,17 +53,19 @@
 
               <div class="product__prices">
                 <span class="product__price">1 200 руб.</span>
-                <button class="product__basket">Добавить в корзину</button>
+                <button class="product__basket">
+                  <img src="img/icon-cart.svg" alt="Добавить в корзину">
+                </button>
               </div>
 
             </div>
 
           </article>
 
-          <article class="catalog-item">
+          <article class="product">
 
-            <div class="product">
-              <img src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
+            <div class="product__img">
+              <img src="img/photo-2-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
             </div>
 
             <div class="product__container">
@@ -72,17 +77,19 @@
 
               <div class="product__prices">
                 <span class="product__price">690 руб.</span>
-                <button class="product__basket">Добавить в корзину</button>
+                <button class="product__basket">
+                  <img src="img/icon-cart.svg" alt="Добавить в корзину">
+                </button>
               </div>
 
             </div>
 
           </article>
 
-          <article class="catalog-item">
+          <article class="product">
 
-            <div class="product">
-              <img src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
+            <div class="product__img">
+              <img src="img/photo-3-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
             </div>
 
             <div class="product__container">
@@ -94,7 +101,9 @@
 
               <div class="product__prices">
                 <span class="product__price">1 500 руб.</span>
-                <button class="product__basket">Добавить в корзину</button>
+                <button class="product__basket">
+                  <img src="img/icon-cart.svg" alt="Добавить в корзину">
+                </button>
               </div>
 
             </div>
@@ -112,7 +121,7 @@
             </div>
 
             <div class="production-process__img">
-              <img src="http://placehold.it/150x100" alt="">
+              <img src="img/video-mobile@1x.jpg" alt="">
             </div>
 
             <div class="production-process__container">
@@ -128,29 +137,29 @@
 
       <footer class="page-footer">
 
-        <div class="page-footer__social">
-          <a class="page-footer__social-link" href="#"></a>
-          <a class="page-footer__social-link" href="#"></a>
-          <a class="page-footer__social-link" href="#"></a>
-        </div>
+          <div class="page-footer__social">
+            <a class="page-footer__social-link" href="#"><img src="/img/icon-insta.svg" alt="Инстаграм"></a>
+            <a class="page-footer__social-link" href="#"><img src="/img/icon-fb.svg" alt="Инстаграм"></a>
+            <a class="page-footer__social-link" href="#"><img src="/img/icon-twitter.svg" alt="Инстаграм"></a>
+          </div>
 
-        <div class="page-footer__copyright">
-          <span class="page-footer__text">Разработано</span>
-          <a class="page-footer__link" href="#"></a>
-        </div>
+          <div class="page-footer__copyright">
+            <span class="page-footer__text">Разработано</span>
+            <a class="page-footer__link" href="#"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy"></a>
+          </div>
 
       </footer>
 
       <div class="popup">
 
-        <h2 class="popup__title">Добавить в корзину</h2>
+        <h2 class="popup__title">Добавить<br> в корзину</h2>
 
         <span class="popup__text">Выберите размер:</span>
         <label class="popup__size" for=""><input type="radio" id="s" name="size" checked>S</label>
         <label class="popup__size" for=""><input type="radio" id="m" name="size">M</label>
         <label class="popup__size" for=""><input type="radio" id="l" name="size">L</label>
 
-        <button class="btn">Добавить</button>
+        <button class="btn popup--btn">Добавить</button>
 
       </div>
 

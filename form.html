@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
 
@@ -12,15 +13,17 @@
 
       <header class="page-header">
         <div class="page-header__logo">
-          <img src="http://placehold.it/150x100" alt="Магазин игрушек «Мишка»">
+          <img src="img/logo-mobile.svg" alt="Магазин игрушек «Мишка»">
         </div>
-          <nav class="main-nav main-nav--closed">
-            <button class="page-nav__toggle">Открыть меню</button>
+          <nav class="page-nav page-nav--closed">
+            <button class="page-nav__toggle">
+              <span class="page-nav__menu-hamburger"></span>
+            </button>
             <ul class="page-nav__items">
-              <li class="page-nav__item"><a href="#">Каталог товаров</a></li>
-              <li class="page-nav__item"><a href="#">Вязание на заказ</a></li>
-              <li class="page-nav__item"><a href="#">Поиск по сайту</a></li>
-              <li class="page-nav__item"><a href="#">Корзина: пока пуста</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="catalog.html">Каталог товаров</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="form.html">Вязание на заказ</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="#">Поиск по сайту</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="#">Корзина: пока пуста</a></li>
             </ul>
           </nav>
       </header>
@@ -48,13 +51,17 @@
                 <ul class="knitting-order-list">
 
                   <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="accessories">Аксессуар для интерьера</label>
-                    <input class="knitting-order-list__input" id="accessories" type="radio" name="type" checked>
+                    <label class="knitting-order-list__label" for="accessories">
+                      <input class="knitting-order-list__input" id="accessories" type="radio" name="type" checked>
+                      <span>Аксессуар для интерьера</span>
+                    </label>
                   </li>
 
                   <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="toy">Детская игрушка</label>
-                    <input class="knitting-order-list__input" id="toy" type="radio" name="type">
+                    <label class="knitting-order-list__label" for="toy">
+                     <input class="knitting-order-list__input" id="toy" type="radio" name="type">
+                      <span>Детская игрушка</span>
+                    </label>
                   </li>
 
                 </ul>
@@ -68,33 +75,46 @@
                 <ul class="knitting-order-list">
 
                   <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="color-white">Белый</label>
-                    <input class="knitting-order-list__input" id="color-white" type="checkbox" name="white" checked>
+                    <label class="knitting-order-list__label" for="color-white">
+                      <input class="knitting-order-list__input" id="color-white" type="checkbox" name="white" checked>
+                      <span>Белый</span>
+                    </label>
                   </li>
 
                   <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="color-gray">Серый</label>
-                    <input class="knitting-order-list__input" id="color-gray" type="checkbox" name="gray" checked>
+                    <label class="knitting-order-list__label" for="color-gray">
+                      <input class="knitting-order-list__input" id="color-gray" type="checkbox" name="gray" checked>
+                      <span>Серый</span>
+                    </label>
                   </li>
 
                   <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="color-tiffany">«Тиффани»</label>
-                    <input class="knitting-order-list__input" id="color-tiffany" type="checkbox" name="tiffany">
+                    <label class="knitting-order-list__label" for="color-tiffany">
+                      <input class="knitting-order-list__input" id="color-tiffany" type="checkbox" name="tiffany">
+                      <span>«Тиффани»</span>
+                    </label>
                   </li>
 
                   <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="color-black">Черный</label>
-                    <input class="knitting-order-list__input" id="color-black" type="checkbox" name="black">
+                    <label class="knitting-order-list__label" for="color-black">
+                     <input class="knitting-order-list__input" id="color-black" type="checkbox" name="black">
+                      <span>Черный</span>
+                    </label>
+
                   </li>
 
                   <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="color-pink">Розовый</label>
-                    <input class="knitting-order-list__input" id="color-pink" type="checkbox" name="pink">
+                    <label class="knitting-order-list__label" for="color-pink">
+                      <input class="knitting-order-list__input" id="color-pink" type="checkbox" name="pink">
+                      <span>Розовый</span>
+                    </label>
                   </li>
 
                   <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="color-orange">Оранжевый</label>
-                    <input class="knitting-order-list__input" id="color-orange" type="checkbox" name="orange">
+                    <label class="knitting-order-list__label" for="color-orange">
+                     <input class="knitting-order-list__input" id="color-orange" type="checkbox" name="orange">
+                      <span>Оранжевый</span>
+                    </label>
                   </li>
 
                 </ul>
@@ -107,18 +127,27 @@
 
                 <ul class="knitting-order-list">
                   <li class="knitting-order-item">
-                    <label class="knitting-order-list__label" for="firstname">Имя</label>
-                    <input class="knitting-order-list__input" id="firstname" type="text" name="firstname"  placeholder="Введите ваше имя*">
+                    <label class="knitting-order-list__label" for="firstname">
+                      <span>Имя</span>
+                      <input class="knitting-order-list__text" id="firstname" type="text" name="firstname"  placeholder="Введите ваше имя*">
+                    </label>
+
                   </li>
 
                   <li class="knitting-order-item">
-                    <label  class="knitting-order-list__label" for="lastname">Фамилия</label>
-                    <input  class="knitting-order-list__input" id="lastname" type="text" name="lastname" placeholder="Укажите фамилию*">
+                    <label  class="knitting-order-list__label" for="lastname">
+                      <span>Фамилия</span>
+                      <input  class="knitting-order-list__text" id="lastname" type="text" name="lastname" placeholder="Укажите фамилию*">
+                    </label>
+
                   </li>
 
                   <li class="knitting-order-item">
-                    <label class="knitting-order-list__label" for="patronymic">Отчество</label>
-                    <input class="knitting-order-list__input" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
+                    <label class="knitting-order-list__label" for="patronymic">
+                      <span>Отчество</span>
+                      <input class="knitting-order-list__text" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
+                    </label>
+
                   </li>
                 </ul>
 
@@ -129,7 +158,7 @@
                 <legend class="knitting-order__title">Тел</legend>
 
                 <div class="knitting-order-list__text-container">
-                  <input class="knitting-order-list__phone-number" id="phone-number" type="text" placeholder="+7 ХХХ ХХ ХХ*">
+                  <input class="knitting-order-list__text knitting-order-list--phone-number" id="phone-number" type="text" placeholder="+7 ХХХ ХХ ХХ*">
                 </div>
 
               </fieldset>
@@ -139,7 +168,7 @@
                 <legend class="knitting-order__title">E-mail</legend>
 
                 <div class="knitting-order-list__text-container">
-                  <input class="knitting-order__email" id="email" type="email" placeholder="Ваш Email*">
+                  <input class="knitting-order-list__text knitting-order--email" id="email" type="email" placeholder="Ваш Email*">
                 </div>
 
               </fieldset>
@@ -167,16 +196,16 @@
 
       <footer class="page-footer">
 
-        <div class="page-footer__social">
-          <a class="page-footer__social-link" href="#"></a>
-          <a class="page-footer__social-link" href="#"></a>
-          <a class="page-footer__social-link" href="#"></a>
-        </div>
+          <div class="page-footer__social">
+            <a class="page-footer__social-link" href="#"><img src="/img/icon-insta.svg" alt="Инстаграм"></a>
+            <a class="page-footer__social-link" href="#"><img src="/img/icon-fb.svg" alt="Инстаграм"></a>
+            <a class="page-footer__social-link" href="#"><img src="/img/icon-twitter.svg" alt="Инстаграм"></a>
+          </div>
 
-        <div class="page-footer__copyright">
-          <span class="page-footer__text">Разработано</span>
-          <a class="page-footer__link" href="#"></a>
-        </div>
+          <div class="page-footer__copyright">
+            <span class="page-footer__text">Разработано</span>
+            <a class="page-footer__link" href="#"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy"></a>
+          </div>
 
       </footer>
 

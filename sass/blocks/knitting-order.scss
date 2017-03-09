@@ -1,0 +1,59 @@
+.knitting-order {
+  padding-top: 23px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &__desc {
+    margin-bottom: 25px;
+    font-family: "OpenSans";
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  &__wrapper {
+
+  }
+
+  &__type {
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    margin-bottom: 33px;
+    font-family: "OpenSans bold";
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $color-light-green;
+  }
+  
+  &__color {
+    
+  }
+  
+  &__name {
+    
+  }
+  
+  &__extra {
+    margin-bottom: 12px;
+  }
+  
+  &__text {
+    display: block;
+    margin-bottom: 30px;
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: &color-light-text;
+  }
+  
+  .btn  {
+    margin-bottom: 54px;
+    width: 100%;
+    padding: 15px;
+  }
+  
+}
