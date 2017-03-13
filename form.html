@@ -12,20 +12,56 @@
     <div class="container">
 
       <header class="page-header">
+
         <div class="page-header__logo">
           <img src="img/logo-mobile.svg" alt="Магазин игрушек «Мишка»">
+          <button class="page-header__toggle">
+              <img src="img/icon-menu-open.svg" alt="Меню">
+          </button>
         </div>
-          <nav class="page-nav page-nav--closed">
-            <button class="page-nav__toggle">
-              <span class="page-nav__menu-hamburger"></span>
-            </button>
-            <ul class="page-nav__items">
-              <li class="page-nav__item"><a class="page-nav__link" href="catalog.html">Каталог товаров</a></li>
-              <li class="page-nav__item"><a class="page-nav__link" href="form.html">Вязание на заказ</a></li>
-              <li class="page-nav__item"><a class="page-nav__link" href="#">Поиск по сайту</a></li>
-              <li class="page-nav__item"><a class="page-nav__link" href="#">Корзина: пока пуста</a></li>
-            </ul>
-          </nav>
+        <nav class="page-nav page-nav--open">
+
+          <ul class="page-nav__items page-nav__items--menu1">
+            <li class="page-nav__item page-nav__item--catalog">
+              <a class="page-nav__link page-nav__link--catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="page-nav__item page-nav__item--knitting">
+              <a class="page-nav__link page-nav__link--knitting" href="form.html">Вязание на заказ</a>
+            </li>
+				  </ul>
+
+          <ul class="page-nav__items page-nav__items--menu2">
+            <li class="page-nav__item page-nav__item--search">
+              <a class="page-nav__link page-nav__link--search" href="#">
+                <span>Поиск по сайту</span>
+                <img src="img/icon-search.svg" alt="Поиск">
+              </a>
+            </li>
+            <li class="page-nav__item page-nav__item--basket">
+              <a class="page-nav__link page-nav__link--basket" href="#">
+                <img src="img/icon-cart.svg" alt="">
+                <span>Корзина: пока пуста</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="page-nav__items page-nav__items--desktop">
+          	<li class="page-nav__item--receipts">
+          	  <a class="page-nav__link page-nav__link--receipts" href="#">Новые поступления</a>
+          	</li>
+          	<li class="page-nav__item--sale">
+          	  <a class="page-nav__link page-nav__link--sale" href="#">Распродажа</a>
+          	</li>
+          </ul>
+
+          <ul class="page-nav__items page-nav__items--menu3 page-nav__items--tablet">
+          	<li class="page-nav__item--delivery">
+          	  <a class="page-nav__link page-nav__link--delivery" href="#">Бесплатная доставка по России</a>
+          	</li>
+          </ul>
+
+        </nav>
+
       </header>
 
       <main>
@@ -50,14 +86,14 @@
 
                 <ul class="knitting-order-list">
 
-                  <li class="knitting-order-list__item">
+                  <li class="knitting-order-list__item knitting-order-list__item--type">
                     <label class="knitting-order-list__label" for="accessories">
                       <input class="knitting-order-list__input" id="accessories" type="radio" name="type" checked>
                       <span>Аксессуар для интерьера</span>
                     </label>
                   </li>
 
-                  <li class="knitting-order-list__item">
+                  <li class="knitting-order-list__item knitting-order-list__item--type">
                     <label class="knitting-order-list__label" for="toy">
                      <input class="knitting-order-list__input" id="toy" type="radio" name="type">
                       <span>Детская игрушка</span>
@@ -74,44 +110,44 @@
 
                 <ul class="knitting-order-list">
 
-                  <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="color-white">
+                  <li class="knitting-order-list__item knitting-order-list__item--color">
+                    <label class="knitting-order-list__label knitting-order-list__label--color" for="color-white">
                       <input class="knitting-order-list__input" id="color-white" type="checkbox" name="white" checked>
                       <span>Белый</span>
                     </label>
                   </li>
 
-                  <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="color-gray">
+                  <li class="knitting-order-list__item knitting-order-list__item--color">
+                    <label class="knitting-order-list__label knitting-order-list__label--color" for="color-gray">
                       <input class="knitting-order-list__input" id="color-gray" type="checkbox" name="gray" checked>
                       <span>Серый</span>
                     </label>
                   </li>
 
-                  <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="color-tiffany">
+                  <li class="knitting-order-list__item knitting-order-list__item--color">
+                    <label class="knitting-order-list__label knitting-order-list__label--color" for="color-tiffany">
                       <input class="knitting-order-list__input" id="color-tiffany" type="checkbox" name="tiffany">
                       <span>«Тиффани»</span>
                     </label>
                   </li>
 
-                  <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="color-black">
+                  <li class="knitting-order-list__item knitting-order-list__item--color">
+                    <label class="knitting-order-list__label knitting-order-list__label--color" for="color-black">
                      <input class="knitting-order-list__input" id="color-black" type="checkbox" name="black">
                       <span>Черный</span>
                     </label>
 
                   </li>
 
-                  <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="color-pink">
+                  <li class="knitting-order-list__item knitting-order-list__item--color">
+                    <label class="knitting-order-list__label knitting-order-list__label--color" for="color-pink">
                       <input class="knitting-order-list__input" id="color-pink" type="checkbox" name="pink">
                       <span>Розовый</span>
                     </label>
                   </li>
 
-                  <li class="knitting-order-list__item">
-                    <label class="knitting-order-list__label" for="color-orange">
+                  <li class="knitting-order-list__item knitting-order-list__item--color">
+                    <label class="knitting-order-list__label knitting-order-list__label--color" for="color-orange">
                      <input class="knitting-order-list__input" id="color-orange" type="checkbox" name="orange">
                       <span>Оранжевый</span>
                     </label>
@@ -123,10 +159,10 @@
 
               <fieldset class="knitting-order__name">
 
-                <legend class="knitting-order__title">Фио</legend>
+                <legend class="knitting-order__title knitting-order__title--name">Фио</legend>
 
                 <ul class="knitting-order-list">
-                  <li class="knitting-order-item">
+                  <li class="knitting-order-list__item knitting-order__item--name">
                     <label class="knitting-order-list__label" for="firstname">
                       <span>Имя</span>
                       <input class="knitting-order-list__text" id="firstname" type="text" name="firstname"  placeholder="Введите ваше имя*">
@@ -134,7 +170,7 @@
 
                   </li>
 
-                  <li class="knitting-order-item">
+                  <li class="knitting-order-list__item knitting-order__item--name">
                     <label  class="knitting-order-list__label" for="lastname">
                       <span>Фамилия</span>
                       <input  class="knitting-order-list__text" id="lastname" type="text" name="lastname" placeholder="Укажите фамилию*">
@@ -142,7 +178,7 @@
 
                   </li>
 
-                  <li class="knitting-order-item">
+                  <li class="knitting-order-list__item knitting-order__item--name">
                     <label class="knitting-order-list__label" for="patronymic">
                       <span>Отчество</span>
                       <input class="knitting-order-list__text" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
@@ -155,7 +191,7 @@
 
               <fieldset class="knitting-order__phone">
 
-                <legend class="knitting-order__title">Тел</legend>
+                <legend class="knitting-order__title knitting-order__title--phone">Тел</legend>
 
                 <div class="knitting-order-list__text-container">
                   <input class="knitting-order-list__text knitting-order-list--phone-number" id="phone-number" type="text" placeholder="+7 ХХХ ХХ ХХ*">
@@ -165,7 +201,7 @@
 
               <fieldset class="knitting-order__email">
 
-                <legend class="knitting-order__title">E-mail</legend>
+                <legend class="knitting-order__title knitting-order__title--email">E-mail</legend>
 
                 <div class="knitting-order-list__text-container">
                   <input class="knitting-order-list__text knitting-order--email" id="email" type="email" placeholder="Ваш Email*">
@@ -175,7 +211,7 @@
 
               <fieldset class="knitting-order__extra">
 
-                <legend class="knitting-order__title">Доп</legend>
+                <legend class="knitting-order__title knitting-order__title--extra">Доп</legend>
 
                 <textarea class="knitting-order-list__textarea" id="extra" name="exta" placeholder="Опишите все ваши пожелания к заказу"></textarea>
 
@@ -196,10 +232,14 @@
 
       <footer class="page-footer">
 
+          <div class="page-footer__logo">
+            <img src="img/logo-mobile.svg" alt="">
+          </div>
+
           <div class="page-footer__social">
-            <a class="page-footer__social-link" href="#"><img src="/img/icon-insta.svg" alt="Инстаграм"></a>
-            <a class="page-footer__social-link" href="#"><img src="/img/icon-fb.svg" alt="Инстаграм"></a>
-            <a class="page-footer__social-link" href="#"><img src="/img/icon-twitter.svg" alt="Инстаграм"></a>
+            <a class="page-footer__social-link" href="#"><img src="img/icon-insta.svg" alt="Инстаграм"></a>
+            <a class="page-footer__social-link" href="#"><img src="img/icon-fb.svg" alt="Инстаграм"></a>
+            <a class="page-footer__social-link" href="#"><img src="img/icon-twitter.svg" alt="Инстаграм"></a>
           </div>
 
           <div class="page-footer__copyright">
@@ -210,7 +250,7 @@
       </footer>
 
     </div>
-
+  <script src="js/app.js"></script>
   </body>
 
 </html>

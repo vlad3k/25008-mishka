@@ -1,17 +1,57 @@
 .knitting-order-list {
 
   &__item {
-    padding-left: 63px;
     margin-bottom: 22px;
   }
 
+  &__item--type {
+    padding-left: 63px;
+  }
+
+  &__item--color {
+    margin-bottom: 42px;
+    padding-left: 63px;
+  }
+
+  &__item--name {
+    margin-bottom: 10px;
+  }
+
   &__label {
+    position: relative;
     margin-bottom: 20px;
     font-family: "OpenSans bold";
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
     color: $color-black;
+  }
+
+  &__input[type="radio"] + span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -63px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px #444 solid;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__input[type="checkbox"] + span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: -63px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px #444 solid;
+    cursor: pointer;
   }
 
   &__input {
@@ -27,16 +67,22 @@
     border-bottom: 2px solid $color-black;
     box-sizing: border-box;
   }
-  
+
   &__textarea {
     box-sizing: border-box;
     height: 142px;
     width: 100%;
-    margin-top: 35px;
     padding: 15px;
     border: 2px solid $color-light-text;
     background-color: #fff;
     resize: none;
   }
-  
+}
+
+@media screen and (min-width: 768px) {
+
+  .knitting-order-list {
+
+  }
+
 }

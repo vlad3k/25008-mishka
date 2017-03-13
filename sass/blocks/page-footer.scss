@@ -15,14 +15,40 @@
   }
 
   &__copyright {
+		display: flex;
+		justify-content: space-around;
     padding-top: 21px;
     padding-bottom: 20px;
   }
 
   &__text {
+		align-self: center;
     font-family: "OpenSans bold";
     font-weight: bold;
     font-size: 19px;
     line-height: 3px;
+  }
+
+  &__logo {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .page-footer {
+    display: flex;
+    align-items: center;
+
+    &__social {
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+    }
+
+    &__logo {
+      display: block;
+    }
   }
 }

@@ -14,3 +14,33 @@
     line-height: 30px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    z-index: 0;
+    position: relative;
+    top: -75px;
+    padding-top: 153px;
+    height: 760px;
+    border-top: 1px solid $color-gray;
+    background-size: cover;
+
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+
+  .main-header {
+    top: 0;
+    margin-top: -75px;
+
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+    }
+  }
+}

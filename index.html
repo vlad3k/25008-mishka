@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
@@ -9,20 +10,56 @@
     <div class="container">
 
       <header class="page-header">
+
         <div class="page-header__logo">
           <img src="img/logo-mobile.svg" alt="Магазин игрушек «Мишка»">
+          <button class="page-header__toggle">
+              <img src="img/icon-menu-open.svg" alt="Меню">
+          </button>
         </div>
-          <nav class="page-nav page-nav--closed">
-            <button class="page-nav__toggle">
-              <span class="page-nav__menu-hamburger"></span>
-            </button>
-            <ul class="page-nav__items">
-              <li class="page-nav__item"><a class="page-nav__link" href="catalog.html">Каталог товаров</a></li>
-              <li class="page-nav__item"><a class="page-nav__link" href="form.html">Вязание на заказ</a></li>
-              <li class="page-nav__item"><a class="page-nav__link" href="#">Поиск по сайту</a></li>
-              <li class="page-nav__item"><a class="page-nav__link" href="#">Корзина: пока пуста</a></li>
-            </ul>
-          </nav>
+        <nav class="page-nav page-nav--open">
+
+          <ul class="page-nav__items page-nav__items--menu1">
+            <li class="page-nav__item page-nav__item--catalog">
+              <a class="page-nav__link page-nav__link--catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="page-nav__item page-nav__item--knitting">
+              <a class="page-nav__link page-nav__link--knitting" href="form.html">Вязание на заказ</a>
+            </li>
+				  </ul>
+
+          <ul class="page-nav__items page-nav__items--menu2">
+            <li class="page-nav__item page-nav__item--search">
+              <a class="page-nav__link page-nav__link--search" href="#">
+                <span>Поиск по сайту</span>
+                <img src="img/icon-search.svg" alt="Поиск">
+              </a>
+            </li>
+            <li class="page-nav__item page-nav__item--basket">
+              <a class="page-nav__link page-nav__link--basket" href="#">
+                <img src="img/icon-cart.svg" alt="">
+                <span>Корзина: пока пуста</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="page-nav__items page-nav__items--desktop">
+          	<li class="page-nav__item--receipts">
+          	  <a class="page-nav__link page-nav__link--receipts" href="#">Новые поступления</a>
+          	</li>
+          	<li class="page-nav__item--sale">
+          	  <a class="page-nav__link page-nav__link--sale" href="#">Распродажа</a>
+          	</li>
+          </ul>
+
+          <ul class="page-nav__items page-nav__items--menu3 page-nav__items--tablet">
+          	<li class="page-nav__item--delivery">
+          	  <a class="page-nav__link page-nav__link--delivery" href="#">Бесплатная доставка по России</a>
+          	</li>
+          </ul>
+
+        </nav>
+
       </header>
 
       <main>
@@ -99,7 +136,7 @@
               <div class="about-us__img">
                 <img src="img/icon-feature-5.svg" alt="">
               </div>
-              <span class="about-us__desc">Увеличивает лайкина фотографиях</span>
+              <span class="about-us__desc">Увеличивает лайки на фотографиях</span>
             </li>
             <li class="about-us__item">
               <div class="about-us__img">
@@ -135,10 +172,10 @@
 
           <div class="reviews__arrows">
             <button class="reviews__arrow reviews__arrow--left">
-              <img src="/img/icon-left-arrow.svg" alt="Влево">
+              <img src="img/icon-left-arrow.svg" alt="Влево">
             </button>
             <button class="reviews__arrow reviews__arrow--right">
-              <img src="/img/icon-right-arrow.svg" alt="Вправо">
+              <img src="img/icon-right-arrow.svg" alt="Вправо">
             </button>
           </div>
 
@@ -157,12 +194,12 @@
             </li>
             <li class="contacts__item">
               <span class="contacts__name">адрес:</span>
-              <span class="contacts__address">г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101</span>
+              <span class="contacts__address">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</span>
             </li>
           </ul>
 
           <div class="contacts__map">
-            <img src="/img/map-mobile@1x.jpg" alt="Карта">
+            <img src="img/map-mobile@1x.jpg" alt="Карта">
           </div>
 
           <button class="btn">Напишите нам</button>
@@ -173,10 +210,14 @@
 
       <footer class="page-footer">
 
+          <div class="page-footer__logo">
+            <img src="img/logo-mobile.svg" alt="">
+          </div>
+
           <div class="page-footer__social">
-            <a class="page-footer__social-link" href="#"><img src="/img/icon-insta.svg" alt="Инстаграм"></a>
-            <a class="page-footer__social-link" href="#"><img src="/img/icon-fb.svg" alt="Инстаграм"></a>
-            <a class="page-footer__social-link" href="#"><img src="/img/icon-twitter.svg" alt="Инстаграм"></a>
+            <a class="page-footer__social-link" href="#"><img src="img/icon-insta.svg" alt="Инстаграм"></a>
+            <a class="page-footer__social-link" href="#"><img src="img/icon-fb.svg" alt="Инстаграм"></a>
+            <a class="page-footer__social-link" href="#"><img src="img/icon-twitter.svg" alt="Инстаграм"></a>
           </div>
 
           <div class="page-footer__copyright">
@@ -197,5 +238,6 @@
 
     </div>
 
+	<script src="js/app.js"></script>
   </body>
 </html>

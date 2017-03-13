@@ -1,4 +1,5 @@
 .categories-nav {
+
   &__link {
     display: block;
     padding-top: 25px;
@@ -45,4 +46,34 @@
     }
   }
 
+}
+
+@media screen and (min-width: 768px) {
+
+  .categories-nav {
+    margin-top: -208px!important;
+    margin: 0 50px;
+    font-size: 0;
+
+    &__item {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+    }
+
+    &__link {
+      padding-top: 28px;
+      padding-left: 36px;
+      min-height: 118px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+
+  .categories-nav {
+    margin-top: -134px!important;
+  }
 }

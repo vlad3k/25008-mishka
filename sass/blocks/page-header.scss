@@ -1,8 +1,49 @@
 .page-header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $color-gray;
+
   &__logo {
-    padding-top: 14px;
+		margin-bottom: 22px;
+		padding-top: 14px;
     padding-left: 117px;
-    margin-bottom: 18px;
+  }
+
+	&__toggle {
+		margin-left: 61px;
+		background: $color-white;
+		border: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    display: flex;
+    min-height: 88px;
+    border-bottom: none;
+
+    &__logo {
+      display: flex;
+      margin-bottom: 0;
+      width: 370px;
+      height: 81px;
+      flex-shrink: 0;
+      padding: 0px;
+      background: azure;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+
+  .page-header {
+
+    &__logo {
+      position: absolute;
+      left: 508px;
+      width: 250px;
+    }
   }
 }

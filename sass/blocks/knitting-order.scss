@@ -27,19 +27,43 @@
     text-transform: uppercase;
     color: $color-light-green;
   }
-  
+
   &__color {
-    
+    padding-top: 3px;
   }
-  
+
   &__name {
-    
+    padding-bottom: 12px;
   }
-  
+
+  &__phone {
+    padding-bottom: 33px;
+  }
+
+  &__email {
+    padding-bottom: 33px;
+  }
+
   &__extra {
     margin-bottom: 12px;
   }
-  
+
+  &__title--name {
+    margin-bottom: 29px;
+  }
+
+  &__title--phone {
+    margin-bottom: 8px;
+  }
+
+  &__title--email {
+    margin-bottom: 8px;
+  }
+
+  &__title--extra {
+    margin-bottom: 24px;
+  }
+
   &__text {
     display: block;
     margin-bottom: 30px;
@@ -49,11 +73,35 @@
     line-height: 16px;
     color: &color-light-text;
   }
-  
-  .btn  {
+
+  .btn {
     margin-bottom: 54px;
     width: 100%;
     padding: 15px;
   }
-  
 }
+
+@media screen and (min-width: 768px) {
+
+  .knitting-order {
+    padding-left: 50px;
+
+    &__desc {
+      margin-top: 54px;
+      margin-bottom: 75px;
+      padding-right: 20px;
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__type {
+
+    }
+
+    &__title {
+      width: 167px;
+    }
+  }
+}
+
+
