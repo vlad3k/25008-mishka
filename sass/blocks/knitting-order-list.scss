@@ -1,88 +1,210 @@
 .knitting-order-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
 
-  &__item {
-    margin-bottom: 22px;
-  }
-
-  &__item--type {
-    padding-left: 63px;
-  }
-
-  &__item--color {
-    margin-bottom: 42px;
-    padding-left: 63px;
-  }
-
-  &__item--name {
-    margin-bottom: 10px;
-  }
-
-  &__label {
-    position: relative;
-    margin-bottom: 20px;
-    font-family: "OpenSans bold";
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 18px;
-    color: $color-black;
-  }
-
-  &__input[type="radio"] + span::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: -63px;
-    width: 35px;
-    height: 35px;
-    background-color: transparent;
-    border: 2px #444 solid;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  &__input[type="checkbox"] + span::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -8px;
-    left: -63px;
-    width: 35px;
-    height: 35px;
-    background-color: transparent;
-    border: 2px #444 solid;
-    cursor: pointer;
-  }
-
-  &__input {
+  &__input[type=checkbox],
+  &__input[type=radio] {
     display: none;
   }
 
-  &__text {
-    display: block;
-    min-height: 50px;
+
+  &__item {
+    display: inline-flex;
     width: 100%;
-    background-color: #fff;
+    vertical-align: middle;
+  }
+
+  &__label {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 64px;
+    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  &__label--type {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 37px;
+      height: 37px;
+      left: 0;
+      top: 0;
+      border: 2px solid $color-light-text;
+      border-radius: 50%;
+    }
+  }
+
+  &__label--color{
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 37px;
+      height: 37px;
+      left: 0;
+      top: 0;
+      border: 2px solid $color-light-text;
+    }
+  }
+
+  &__item--color {
+    margin-bottom: 21px;
+  }
+
+  &__label--name {
+    padding-left: 0;
+  }
+
+  &__label--name {
+
+    span {
+      display: block;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 260px;
+    font-size: 17px;
+    line-height: 18px;
     border: none;
-    border-bottom: 2px solid $color-black;
-    box-sizing: border-box;
+    border-bottom: 2px solid #000;
   }
 
   &__textarea {
-    box-sizing: border-box;
-    height: 142px;
+    display: block;
+    margin-bottom: 14px;
+    padding-right: 20px;
     width: 100%;
-    padding: 15px;
-    border: 2px solid $color-light-text;
-    background-color: #fff;
-    resize: none;
+    height: 142px;
+    font-size: 17px;
+    line-height: 18px;
+    border: 2px solid #000;
+    box-sizing: border-box;
   }
 }
 
 @media screen and (min-width: 768px) {
 
   .knitting-order-list {
+    display: inline-flex;
+    width: 73%;
+    flex-wrap: wrap;
+
+    &__label {
+      padding-top: 17px;
+      padding-bottom: 17px;
+      padding-left: 77px;
+      font-size: 19px;
+      line-height: 18px;
+    }
+
+
+    &__label--type::before {
+      width: 48px;
+      height: 48px;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__item--type {
+      margin-bottom: 24px;
+    }
+
+    &__label--color::before {
+      width: 48px;
+      height: 48px;
+    }
+
+    &__item--color {
+      margin-bottom: 25px;
+      width: 243px;
+    }
+
+    &__label--name {
+      padding-left: 0;
+    }
+
+    &__label--name {
+      span {
+        display: inline-block;
+        padding-right: 25px;
+        width: auto;
+      }
+    }
+
+    &__text--firstname {
+      width: 409px;
+    }
+
+    &__text--lastname {
+      width: 357px;
+    }
+
+    &__text--patronymic {
+      width: 357px;
+    }
+
+    &__text {
+      padding-top: 15px;
+      padding-bottom: 14px;
+      font-size: 19px;
+      line-height: 18px;
+    }
+
+    &__item--name {
+      margin-bottom: 23px;
+    }
+
+    &__label--name {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &--phone {
+      width: 490px;
+    }
+
+    &--email {
+      width: 490px;
+    }
+
+    &__textarea {
+      width: 490px;
+    }
 
   }
+}
 
+@media screen and (min-width: 1150px) {
+
+  .knitting-order-list {
+    width: 82%;
+
+    &__item--color {
+      width: 262px;
+    }
+
+    &__text--firstname {
+      width: 617px;
+    }
+
+    &__text--lastname,
+    &__text--patronymic {
+      width: 565px;
+    }
+
+    &__textarea {
+      width: 695px;
+    }
+  }
 }

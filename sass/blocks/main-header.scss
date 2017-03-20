@@ -1,15 +1,16 @@
 .main-header {
   padding-top: 70px;
   padding-bottom: 122px;
-  padding-left: 7px;
-  padding-right: 7px;
   text-align: center;
   background: url(../img/hero-mobile@1x.jpg) no-repeat;
   background-position: center -18px;
+  background-size: cover;
   box-sizing: border-box;
 
   &__title {
-    font-family: "OpenSans bold";
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
     font-size: 27px;
     line-height: 30px;
   }
@@ -19,13 +20,15 @@
   .main-header {
     z-index: 0;
     position: relative;
-    top: -75px;
+    margin-top: -75px;
     padding-top: 153px;
     height: 760px;
     border-top: 1px solid $color-gray;
     background-size: cover;
 
     &__title {
+      padding-left: 80px;
+      padding-right: 80px;
       font-size: 43px;
       line-height: 50px;
     }
@@ -35,10 +38,12 @@
 @media screen and (min-width: 1150px) {
 
   .main-header {
-    top: 0;
-    margin-top: -75px;
+    height: 730px;
+
 
     &__title {
+      padding-left: 200px;
+      padding-right: 200px;
       font-size: 53px;
       line-height: 57px;
     }

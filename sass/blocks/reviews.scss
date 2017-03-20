@@ -50,16 +50,34 @@
   }
 
   &__arrow {
+    position: relative;
     display: inline-block;
     width: 130px;
     height: 52px;
     background-color: $color-white;
     border: 1px solid $color-gray;
     vertical-align: top;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 38px;
+      width: 51px;
+      height: 26px;
+      background-image: url(../../img/icon-left-arrow.svg);
+      background-repeat: no-repeat;
+    }
   }
 
   &__arrow--right {
     border-left: none;
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__btn {
+    width: 100%;
   }
 }
 
@@ -71,9 +89,13 @@
     flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 78px;
-    padding-bottom: 126px;
-    padding-left: 50px;
+    padding-bottom: 90px;
     background: url(../img/review@1x.jpg) no-repeat;
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
     &__title {
       width: 72%;
@@ -96,10 +118,8 @@
     }
 
     &__arrows {
-      position: absolute;
-      top: 358px;
-      left: 545px;
-      margin: 0;
+      margin-top: -55px;
+      margin-left: 71%;
     }
 
     &__arrow {
@@ -108,8 +128,10 @@
       border: none;
     }
 
-    .btn {
-      width: calc(25% + 2px);
+    &__btn {
+      align-self: flex-start;
+      margin-left: auto;
+      width: 175px;
       order: -1;
     }
   }
@@ -119,10 +141,12 @@
 
   .reviews {
     margin-top: 9px;
-    margin-left: 50px;
     padding-top: 70px;
-    padding-bottom: 183px;
-    padding-left: 175px;
+    padding-bottom: 146px;
+
+    &__container {
+      padding-left: 252px;
+    }
 
     &__title {
       font-size: 53px;
@@ -131,16 +155,16 @@
 
     &__text {
       margin-bottom: 40px;
+      padding-right: 100px;
     }
 
     &__arrows {
-      top: 308px;
-      left: 876px;
+      margin-left: 75.5%;
     }
 
-    .btn {
-      margin-top: 9px;
-      margin-left: 56px;
+    &__btn {
+      margin-top: 7px;
+      margin-right: 26px;
       width: 175px;
     }
   }

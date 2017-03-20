@@ -6,14 +6,14 @@
 
   &__title {
     margin-bottom: 27px;
-    font-family: "OpenSans bold";
+    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
   }
 
   &__items {
-    font-family: "OpenSans";
+    font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
     font-weight: normal;
     font-size: 15px;
     line-height: 30px;
@@ -35,8 +35,7 @@
     margin-left: -30px;
   }
 
-  .btn {
-    padding: 14px 10px;
+  &__btn {
     width: 100%;
   }
 }
@@ -46,10 +45,9 @@
   .contacts {
     padding-top: 65px;
     padding-bottom: 58px;
-    padding-left: 46px;
 
     &__title {
-      margin-bottom: 50px;
+      margin-bottom: 48px;
       font-size: 43px;
       line-height: 50px;
     }
@@ -64,23 +62,15 @@
     &__item {
       width: 50%;
       box-sizing: border-box;
-
-      &:nth-child(1) {
-        padding-left: 4px;
-      }
-
-      &:nth-child(2) {
-        margin-left: -9px;
-      }
     }
 
     &__map {
+      margin-bottom: 51px;
       width: 768px;
     }
 
-    .btn {
-      margin-top: 14px;
-      margin-left: 223px;
+    &__btn {
+      margin-left: 220px;
       width: 230px;
     }
   }
@@ -91,6 +81,12 @@
   .contacts {
     position: relative;
     padding-bottom: 105px;
+    padding-left: 0;
+    padding-right: 0;
+
+    &__container {
+      padding-left: 225px;
+    }
 
     &__title {
       margin-top: 79px;
@@ -109,14 +105,13 @@
     }
 
     &__map {
-      position: absolute;
-      top: 65px;
-      left: 605px;
+      margin-top: -382px;
+      margin-bottom: -55px;
+      margin-left: 525px;
     }
 
-    .btn {
-      margin-top: 50px;
-      margin-left: 195px;
+    &__btn {
+      margin-left: 176px;
       width: 230px;
     }
   }
