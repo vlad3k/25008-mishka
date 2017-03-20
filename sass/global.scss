@@ -2,11 +2,14 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -24,6 +27,5 @@ fieldset {
 }
 
 .page-nav--open {
-	display: none;
+  display: none;
 }
-

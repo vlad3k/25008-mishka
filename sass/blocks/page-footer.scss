@@ -3,7 +3,6 @@
   padding-left: 30px;
   padding-right: 30px;
   background: $color-bg-gray;
-
   &__social {
     display: flex;
     flex-wrap: wrap;
@@ -13,67 +12,53 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #e5e5e5;
   }
-
   &__social-link {
     padding-right: 36px;
   }
-
   &__copyright {
-		display: flex;
+    display: flex;
     justify-content: space-around;
     padding-top: 21px;
     padding-bottom: 20px;
   }
-
   &__text {
-		align-self: center;
+    align-self: center;
     margin-left: 15px;
     font-family: "OpenSans bold";
     font-weight: bold;
     font-size: 19px;
     line-height: 3px;
   }
-
   &__logo {
     display: none;
   }
-
 }
 
 @media screen and (min-width: 768px) {
-
   .page-footer {
     padding-bottom: 32px;
-
     &__container {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
       padding-top: 10px;
     }
-
     &__social {
       flex: 3.2;
       margin-left: 0;
       border: none;
     }
-
     &__social-link {
       margin-right: 4px;
     }
-
-    &__link {
-    }
-
+    &__link {}
     &__logo {
       display: block;
       align-self: center;
       flex: 1;
     }
-
     &__copyrigth {
       flex: 1;
     }
-
   }
 }
