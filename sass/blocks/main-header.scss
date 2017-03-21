@@ -3,7 +3,7 @@
   padding-bottom: 122px;
   text-align: center;
   background: url(../img/hero-mobile@1x.jpg) no-repeat;
-  background-position: center -18px;
+  background-position: center 0;
   background-size: cover;
   box-sizing: border-box;
 
@@ -20,9 +20,9 @@
   .main-header {
     z-index: 0;
     position: relative;
-    margin-top: -75px;
+    margin-top: -83px;
     padding-top: 153px;
-    height: 760px;
+    height: 742px;
     border-top: 1px solid $color-gray;
     background-size: cover;
 
@@ -38,8 +38,7 @@
 @media screen and (min-width: 1150px) {
 
   .main-header {
-    height: 730px;
-
+    height: 743px;
 
     &__title {
       padding-left: 200px;
