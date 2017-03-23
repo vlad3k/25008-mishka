@@ -27,6 +27,19 @@
     margin-left: 30px;
   }
 
+  &__address--border {
+    border-bottom: 1px solid $color-light-green;
+    color: $color-light-text;
+    &:hover {
+      color: $color-light-green;
+      border-color: $color-dark-green;
+    }
+    &:active {
+      color: rgba($color-light-green, 0.3);
+      border-color: rgba($color-dark-green, 0.3);
+    }
+  }
+
   &__map {
     margin-bottom: 35px;
     padding-top: 7px;

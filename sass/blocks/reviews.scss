@@ -55,6 +55,7 @@
     background-color: $color-white;
     border: 1px solid $color-gray;
     vertical-align: top;
+    cursor: pointer;
     &::after {
       content: "";
       position: absolute;
@@ -64,6 +65,12 @@
       height: 26px;
       background-image: url(../img/icon-left-arrow.svg);
       background-repeat: no-repeat;
+      }
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
     }
   }
 

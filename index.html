@@ -10,6 +10,12 @@
 
 <body class="body">
 
+  <svg style="display: none">
+    <symbol id="icon-search" viewBox="-0.8 -0.8 17.6 17.6">
+      <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+    </symbol>
+  </svg>
+
   <header class="page-header">
     <div class="container">
 
@@ -50,6 +56,9 @@
         <ul class="page-nav__items-menu2">
           <li class="page-nav__item page-nav__item--search">
             <a class="page-nav__link page-nav__link--search" href="#">
+              <svg>
+                <use xlink:href='#icon-search' />
+              </svg>
               <span>Поиск по сайту</span>
             </a>
           </li>
@@ -87,7 +96,9 @@
 
       <div class="container">
 
-        <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+        <h1 class="main-header__title">
+          Милые штуки ручной работы для дома
+        </h1>
 
       </div>
 
@@ -218,7 +229,7 @@
         <ul class="contacts__items">
           <li class="contacts__item">
             <span class="contacts__name">e-mail:</span>
-            <span class="contacts__address">info@mimimishkashop.ru</span>
+            <a href="#" class="contacts__address contacts__address--border">info@mimimishkashop.ru</a>
           </li>
           <li class="contacts__item">
             <span class="contacts__name">адрес:</span>
@@ -227,7 +238,6 @@
         </ul>
 
         <div class="contacts__map">
-          <!--<img src="img/map-mobile@1x.jpg" alt="Карта">-->
         </div>
 
         <button class="btn contacts__btn">Напишите нам</button>
