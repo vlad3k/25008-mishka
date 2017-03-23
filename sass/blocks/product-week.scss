@@ -86,7 +86,7 @@
 
   .product-week {
     padding-top: 45px;
-    padding-bottom: 69px;
+    padding-bottom: 44px;
 
     &__container {
       display: flex;
@@ -136,8 +136,9 @@
     }
 
     &__order {
-      margin-top: -60px;
+      margin-top: -150px;
       width: 50%;
+      text-align: center;
     }
 
     &__price {
@@ -149,6 +150,7 @@
 
     &__btn {
       width: 291px;
+      margin-right: 13%;
     }
   }
 }
@@ -194,13 +196,13 @@
     }
 
     &__order {
-      margin-top: 96px;
-      margin-left: 176px;
+      margin-top: -125px;
+      margin-left: 102px;
     }
 
     &__price {
       margin-top: 0;
-      margin-right: 245px;
+      margin-right: 80px;
       padding-left: 18px;
     }
   }

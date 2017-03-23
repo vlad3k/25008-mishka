@@ -1,7 +1,6 @@
 .categories-nav {
 
   &__container {
-    width: 320px;
     margin: 0 auto;
   }
 
@@ -23,6 +22,11 @@
     line-height: 24px;
     color: $color-white;
     box-sizing: border-box;
+
+    span {
+      display: block;
+      width: 130px;
+    }
 
     &--interior {
       position: relative;
@@ -82,7 +86,6 @@
     }
 
     &__container {
-      width: 668px;
       padding-left: 50px;
       padding-right: 50px;
     }
@@ -92,6 +95,7 @@
     }
 
     &__item {
+      width: 50%;
       padding: 0;
       background: transparent;
     }
@@ -107,7 +111,7 @@
     &__link--interior {
       &::after {
         top: 30px;
-        left: 259px;
+        right: 16px;
       }
     }
 
@@ -116,7 +120,7 @@
       padding-left: 29px;
       &::after {
         top: 31px;
-        left: 233px;
+        right: 35px;
       }
     }
   }

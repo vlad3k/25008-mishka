@@ -1,4 +1,5 @@
 .page-nav {
+  text-align: center;
   &__logo {
     padding-top: 22px;
     padding-bottom: 18px;
@@ -85,13 +86,15 @@
   .page-nav {
     display: flex;
     flex-wrap: wrap;
+    text-align: left;
     &__toggle {
       display: none;
     }
     &__logo {
       order: 0;
+      flex-grow: 1;
       padding-left: 0;
-      padding-right: 226px;
+      padding-right: 32%;
     }
     &__items-menu1 {
       z-index: 1;
