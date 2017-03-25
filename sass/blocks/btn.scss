@@ -1,5 +1,5 @@
 .btn {
-  padding: 14px 83px;
+  padding: 14px;
   font-family: "OpenSans bold";
   font-weight: bold;
   font-size: 17px;
@@ -8,4 +8,12 @@
   background: $color-white;
   text-transform: uppercase;
   border: 2px solid $color-light-text;
+  cursor: pointer;
+  &:hover {
+    background: #444444;
+    color: #fff;
+  }
+  &:active {
+    color: rgba(#fff, 0.3);
+  }
 }

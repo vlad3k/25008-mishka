@@ -1,7 +1,8 @@
 .popup {
+  display: none;
   padding-left: 30px;
   padding-right: 30px;
-  
+
   &__title {
     margin-bottom: 12px;
     font-family: "OpenSans bold";
@@ -11,7 +12,7 @@
     text-transform: uppercase;
     text-align: center;
   }
-  
+
   &__text {
     display: block;
     margin-bottom: 30px;
@@ -21,7 +22,7 @@
     line-height: 30px;
     text-align: center;
   }
-  
+
   &__size {
     margin-bottom: 30px;
     padding: 20px 34px;
@@ -33,9 +34,8 @@
     box-sizing: border-box;
     border: 2px solid $color-light-green;
   }
-  
+
   input {
     display: none;
   }
-
 }

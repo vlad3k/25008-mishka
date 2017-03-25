@@ -1,6 +1,4 @@
 .reviews {
-  padding-left: 30px;
-  padding-right: 30px;
   padding-bottom: 40px;
 
   &__title {
@@ -45,20 +43,141 @@
 
   &__arrows {
     margin-top: 30px;
-    margin-bottom: 38px;
+    margin-bottom: 35px;
     font-size: 0;
   }
 
   &__arrow {
+    position: relative;
     display: inline-block;
     width: 130px;
     height: 52px;
     background-color: $color-white;
     border: 1px solid $color-gray;
     vertical-align: top;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 38px;
+      width: 51px;
+      height: 26px;
+      background-image: url(../img/icon-left-arrow.svg);
+      background-repeat: no-repeat;
+      }
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__arrow--right {
     border-left: none;
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .reviews {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 78px;
+      padding-bottom: 90px;
+      background: url(../img/review@1x.jpg) no-repeat;
+    }
+
+    &__title {
+      width: 72%;
+      order: -2;
+      margin-bottom: 48px;
+      padding-left: 0px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__text {
+      margin-bottom: 60px;
+      font-size: 17px;
+      line-height: 30px;
+      letter-spacing: 0px;
+    }
+
+    &__author {
+      letter-spacing: 0.05px;
+    }
+
+    &__arrows {
+      margin-top: -55px;
+      margin-left: 71%;
+    }
+
+    &__arrow {
+      margin: 0;
+      width: 87px;
+      border: none;
+    }
+
+    &__btn {
+      align-self: flex-start;
+      margin-left: auto;
+      width: 175px;
+      order: -1;
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+
+  .reviews {
+    margin-top: 9px;
+    padding-bottom: 0;
+
+    &__container {
+      padding-top: 70px;
+      padding-bottom: 146px;
+      padding-left: 50px;
+      background-position: 50px 0;
+    }
+
+    &__title {
+      width: auto;
+      margin-left: 170px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__item {
+      margin-left: 175px;
+    }
+
+    &__text {
+      margin-bottom: 40px;
+      padding-right: 100px;
+    }
+
+    &__arrows {
+      margin-left: 81.5%;
+    }
+
+    &__btn {
+      margin-top: 7px;
+      width: 175px;
+    }
   }
 }

@@ -1,53 +1,150 @@
 .product {
-  margin-bottom: 30px;
-  border: 1px solid #ededed;
-  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  margin-bottom: 29px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  }
 
-  &__text {
-    padding-top: 23px;
-    padding-bottom: 19px;
+  &__container {
+    padding-top: 25px;
     padding-left: 27px;
-    padding-right: 27px;
-    border-bottom: 1px solid #ededed;
+    padding-right: 25px;
+    border: 1px solid $color-gray;
+  }
+
+  &__img {
+    min-height: 195px;
   }
 
   &__title {
+    margin-top: 3px;
     margin-bottom: 5px;
-    font-family: "OpenSans bold";
+    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
+    color: #000;
+    &:hover {
+      color: rgba(#000, 0.6);
+    }
+    &:active {
+      color: rgba(#000, 0.3);
+    }
   }
 
   &__properties {
-    font-family: "OpenSans";
+    display: block;
+    margin-bottom: 40px;
     font-weight: normal;
     font-size: 13px;
     line-height: 30px;
   }
 
-  &__prices {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 26px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   &__price {
-    margin-top: 1px;
-    margin-left: -2px;
-    font-family: "OpenSans bold";
+    display: block;
+    padding-bottom: 28px;
+    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
     font-weight: bold;
     font-size: 15px;
     line-height: 24px;
   }
 
   &__basket {
-    margin-right: -10px;
-    background: $color-white;
+    position: absolute;
+    bottom: 25px;
+    right: 24px;
+    background: transparent;
     border: none;
+    cursor: pointer;
+    svg {
+      fill: #d3d2d2;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 52px;
+
+    &__img {
+      width: 50%;
+      height: 335px;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding-bottom: 25px;
+      width: 50%;
+      flex-grow: 2;
+    }
+
+    &__title {
+      margin-bottom: 5px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__properties {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 15px;
+      line-height: 30px;
+    }
+
+    &__price {
+      margin-top: auto;
+      padding: 0;
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    &__basket {
+      &:hover {
+        svg {
+          fill: $color-light-green;
+        }
+      }
+      &:active {
+        svg {
+          fill: rgba($color-light-green, 0.3);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+
+  .product {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &__img {
+      width: 100%;
+      height: 462px;
+    }
+
+    &__container {
+      padding-top: 23px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    &__properties {
+      margin-bottom: 37px;
+    }
   }
 }

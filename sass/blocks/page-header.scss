@@ -1,8 +1,5 @@
 .page-header {
-  border-bottom: 1px solid #ececec;
-  &__logo {
-    padding-top: 14px;
-    padding-left: 117px;
-    margin-bottom: 18px;
-  }
+  min-height: 80px;
+  border-bottom: 1px solid $color-gray;
+  box-sizing: border-box;
 }

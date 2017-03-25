@@ -1,59 +1,166 @@
 .knitting-order {
-  padding-top: 23px;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-bottom: 32px;
 
   &__desc {
-    margin-bottom: 25px;
-    font-family: "OpenSans";
+    margin-top: 25px;
+    min-width: 260px;
     font-size: 13px;
     line-height: 24px;
   }
 
-  &__wrapper {
-
-  }
-
-  &__type {
-    margin-bottom: 22px;
-  }
-
   &__title {
-    margin-bottom: 33px;
-    font-family: "OpenSans bold";
+    margin-bottom: 25px;
+    width: 100%;
+    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 16px;
-    text-transform: uppercase;
     color: $color-light-green;
+    text-transform: uppercase;
   }
-  
+
+  &__type {
+    padding-top: 25px;
+  }
+
   &__color {
-    
+    padding-top: 29px;
   }
-  
+
   &__name {
-    
+    padding-top: 11px;
   }
-  
+
+  &__title--name {
+    margin-bottom: 19px;
+  }
+
+  &__contacts {
+    padding-top: 22px;
+  }
+
+  &__title--email {
+    padding-top: 30px;
+  }
+
+  &__title--phone {
+    margin-bottom: 20px;
+  }
+
+  &__title--email {
+    margin-bottom: 22px;
+  }
+
   &__extra {
-    margin-bottom: 12px;
+    padding-top: 31px;
   }
-  
+
   &__text {
     display: block;
-    margin-bottom: 30px;
-    font-family: "OpenSans";
-    font-weight: normal;
+    margin-bottom: 31px;
     font-size: 14px;
     line-height: 16px;
-    color: &color-light-text;
   }
-  
-  .btn  {
-    margin-bottom: 54px;
+
+  &__btn {
     width: 100%;
-    padding: 15px;
   }
-  
+}
+
+@media screen and (min-width: 768px) {
+
+  .knitting-order {
+
+    &__desc {
+      margin-top: 78px;
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__type {
+      padding-top: 55px;
+      padding-bottom: 27px;
+    }
+
+    &__title {
+      display: inline-block;
+      width: 25%;
+    }
+
+    &__color {
+      padding-top: 49px;
+      padding-bottom: 24px;
+      background: #f1f1f1;
+    }
+
+    &__name {
+      padding-top: 50px;
+      padding-bottom: 26px;
+    }
+
+    &__contacts {
+      padding-top: 50px;
+      padding-bottom: 46px;
+      background: #f1f1f1;
+    }
+
+    &__title--email {
+      padding-top: 40px;
+    }
+
+    &__extra {
+      padding-top: 50px;
+      margin-bottom: 38px;
+    }
+
+    &__bottom {
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+
+    &__btn {
+      order: -1;
+      padding: 0 10px;
+      width: 230px;
+      height: 52px;
+    }
+
+    &__text {
+      padding-top: 10px;
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+
+  .knitting-order {
+
+    &__desc {
+      margin-top: 125px;
+      width: 700px;
+    }
+
+    &__title {
+      width: 175px;
+      text-align: center;
+    }
+
+    &__contacts {
+      input {
+        width: 100%;
+      }
+    }
+
+    &__bottom {
+      .container {
+        width: 700px;
+      }
+    }
+  }
 }

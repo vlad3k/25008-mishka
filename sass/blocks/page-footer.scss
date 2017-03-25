@@ -1,28 +1,120 @@
 .page-footer {
   padding-top: 22px;
-  padding-left: 30px;
-  padding-right: 30px;
   background: $color-bg-gray;
-
   &__social {
-    padding-left: 58px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 35px;
     padding-bottom: 25px;
     border-bottom: 1px solid #e5e5e5;
   }
 
-  &__social-link {
-    padding-right: 36px;
-  }
-
   &__copyright {
-    padding-top: 21px;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
     padding-bottom: 20px;
+    text-align: center;
   }
-
   &__text {
+    align-self: center;
+    margin-left: 15px;
     font-family: "OpenSans bold";
     font-weight: bold;
     font-size: 19px;
     line-height: 3px;
+    color: $color-black;
+    svg {
+      margin-top: 12px;
+      margin-left: 10px;
+    }
+    &:hover {
+      svg {
+        fill: $color-dark-green;
+      }
+    }
+    &:active {
+      color: rgba(#000, 0.3);
+      svg {
+        opacity: 0.3;
+      }
+    }
+    svg{
+      fill: $color-light-green;
+    }
+  }
+  &__logo {
+    display: none;
+  }
+  &__social-link {
+    margin-right: 36px;
+    &:hover {
+      svg {
+        fill: $color-light-green;
+      }
+    }
+    &:active {
+      svg {
+        fill: rgba($color-light-green, 0.3);
+      }
+    }
+  }
+
+  &__link {
+    padding-right: 22px;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer {
+    padding-top: 33px;
+    padding-bottom: 32px;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__social {
+      flex-grow: 0.5;
+      margin-left: 0;
+      padding-top: 23px;
+      border: none;
+    }
+    &__social-link {
+      margin-right: 36px;
+    }
+    &__logo {
+      flex-grow: 1;
+      display: block;
+      align-self: center;
+      svg {
+        &:hover {
+          fill: $color-light-green;
+        }
+        &:active {
+          fill: rgba($color-dark-green, 0.3);
+        }
+      }
+    }
+    &__copyrigth {
+      flex-grow: 1;
+      color: rgba(#000, 0.3);
+      cursor: pointer;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+
+  .page-footer {
+
+    &__social {
+      flex-grow: 3;
+    }
   }
 }
