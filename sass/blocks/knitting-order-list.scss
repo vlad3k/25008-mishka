@@ -8,6 +8,7 @@
   }
 
   &__item {
+    position: relative;
     display: inline-flex;
     width: 100%;
     vertical-align: middle;
@@ -47,6 +48,16 @@
       border: 2px solid $color-light-text;
       border-radius: 50%;
     }
+    &:hover {
+      &::before {
+        border-color: $color-light-green;
+      }
+    }
+    &:active {
+      &::before {
+        border-color: #cdcdcd;
+      }
+    }
   }
 
   &__label--color {
@@ -76,12 +87,37 @@
       top: 0;
       border: 2px solid $color-light-text;
     }
+    &:hover {
+      &::before {
+        border-color: $color-light-green;
+      }
+    }
+    &:active {
+      &::before {
+        border-color: #cdcdcd;
+      }
+    }
+  }
+
+  &--phone + svg {
+    position: absolute;
+    right: 8px;
+    bottom: 15px;
+    fill: rgba(#000, 0.3);
+  }
+
+  &--email + svg {
+    position: absolute;
+    right: 3px;
+    bottom: 10px;
+    fill: rgba(#000, 0.3);
   }
 
   &__item--color {
     margin-bottom: 21px;
   }
   &__label--name {
+    width: 100%;
     padding-left: 0;
   }
   &__label--name {
@@ -93,13 +129,51 @@
   &__text {
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 260px;
     font-size: 17px;
     line-height: 18px;
+    width: 100%;
     background: transparent;
     border: none;
     border-bottom: 2px solid #000;
+    outline: none;
+    &:hover {
+      border-color: #62d1ba;
+    }
+    &:focus {
+      border-color: #62d1ba;
+    }
   }
+
+  &--phone {
+    &:hover {
+      & + svg {
+        fill: $color-light-green;
+      }
+    }
+    &:focus {
+      & + svg {
+        fill: $color-light-green;
+      }
+    }
+  }
+
+  &--email {
+    width: 100%;
+  }
+
+  &--email {
+    &:hover {
+      & + svg {
+        fill: $color-light-green;
+      }
+    }
+    &:focus {
+      & + svg {
+        fill: $color-light-green;
+      }
+    }
+  }
+
   &__textarea {
     display: block;
     margin-bottom: 14px;
@@ -110,6 +184,13 @@
     line-height: 18px;
     border: 2px solid #000;
     box-sizing: border-box;
+    outline: none;
+    &:hover {
+      border-color: #62d1ba;
+    }
+    &:focus {
+      border-color: #62d1ba;
+    }
   }
 }
 
@@ -160,8 +241,7 @@
     }
     &__label--name {
       padding-left: 0;
-    }
-    &__label--name {
+      width: 100%;
       span {
         display: inline-block;
         padding-right: 25px;
@@ -169,13 +249,13 @@
       }
     }
     &__text--firstname {
-      width: 409px;
+      width: 80%;
     }
     &__text--lastname {
-      width: 357px;
+      width: 69%;
     }
     &__text--patronymic {
-      width: 357px;
+      width: 69%;
     }
     &__text {
       padding-top: 15px;
@@ -193,14 +273,12 @@
       padding-bottom: 0;
     }
     &--phone {
-      width: 490px;
+      width: 100%;
     }
-    &--email {
-      width: 490px;
-    }
+
     &__textarea {
       padding-left: 18px;
-      width: 490px;
+      width: 100%;
     }
   }
 }
@@ -212,14 +290,14 @@
       width: 262px;
     }
     &__text--firstname {
-      width: 617px;
+      width: 86%;
     }
     &__text--lastname,
     &__text--patronymic {
-      width: 565px;
+      width: 79%;
     }
     &__textarea {
-      width: 695px;
+      width: 100%;
     }
   }
 }

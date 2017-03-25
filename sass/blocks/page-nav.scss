@@ -1,9 +1,9 @@
 .page-nav {
   text-align: center;
   &__logo {
+    position: relative;
     padding-top: 22px;
     padding-bottom: 18px;
-    padding-left: 90px;
     &:hover {
       opacity: 0.6;
     }
@@ -19,6 +19,7 @@
   }
   &__link {
     display: block;
+    margin-left: 64px;
     padding-top: 27px;
     padding-bottom: 27px;
     padding-left: 49px;
@@ -39,9 +40,9 @@
   }
   /*ICON MENU*/
   &__toggle {
-    position: relative;
-    margin-top: 10px;
-    margin-left: 60px;
+    position: absolute;
+    top: 33px;
+    right: 0px;
     width: 20px;
     height: 14px;
     background-color: $color-white;
@@ -132,6 +133,7 @@
       margin-left: auto;
     }
     &__link {
+      margin-left: 0;
       padding: 0;
       border-top: none;
     }
@@ -144,27 +146,38 @@
       border-left: 1px solid $color-gray;
       border-right: 1px solid $color-gray;
       svg {
-        fill: red;
+        fill: #d3d2d2;
         width: 17.6px;
         height: 17.6px;
+        &:hover {
+          fill: $color-light-green;
+        }
+        &:active {
+          fill: rgba($color-light-green, 0.3);
+        }
       }
     }
     &__link--basket {
       padding-top: 31px;
-      padding-left: 81px;
-      span {
-        position: relative;
-        &::after {
-          content: "";
-          position: absolute;
-          top: 3px;
-          left: -50px;
-          width: 21px;
-          height: 19px;
-          background-image: url(../img/icon-cart.svg);
+      padding-left: 30px;
+      svg {
+        fill: #d3d2d2;
+        margin-right: 26px;
+        width: 20.294px;
+        height: 18.849px;
+      }
+      &:hover {
+        svg {
+          fill: $color-light-green;
+        }
+      }
+      &:active {
+        svg {
+          fill: rgba($color-light-green, 0.3);
         }
       }
     }
+
     &__link--delivery {
       padding-top: 13px;
       font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
@@ -181,8 +194,8 @@
       order: 1;
       padding: 0;
       padding-top: 30px;
-      padding-left: 50px;
       min-width: 239px;
+      text-align: center;
     }
     &__items-menu1 {
       order: 0;
