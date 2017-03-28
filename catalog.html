@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка</title>
 </head>
@@ -64,13 +65,13 @@
             <svg width="85.589" height="35.034">
               <use xlink:href='#logo-mobile' />
             </svg>
-
-            <button class="page-nav__toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
           </a>
+
+          <button type="button" class="page-nav__toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
         </div>
 
         <ul class="page-nav__items-menu1">
@@ -102,16 +103,16 @@
         </ul>
 
         <ul class="page-nav__items-desktop">
-          <li class="page-nav__item--receipts">
+          <li class="page-nav__item page-nav__item--receipts">
             <a class="page-nav__link page-nav__link--receipts" href="#">Новые поступления</a>
           </li>
-          <li class="page-nav__item--sale">
+          <li class="page-nav__item page-nav__item--sale">
             <a class="page-nav__link page-nav__link--sale" href="#">Распродажа</a>
           </li>
         </ul>
 
         <ul class="page-nav__items-tablet">
-          <li class="page-nav__item--delivery">
+          <li class="page-nav__item page-nav__item--delivery">
             <a class="page-nav__link page-nav__link--delivery" href="#">Бесплатная доставка по России</a>
           </li>
         </ul>
@@ -140,7 +141,7 @@
         <article class="product">
 
           <div class="product__img">
-            <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+            <img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
           </div>
 
           <div class="product__container">
@@ -150,7 +151,7 @@
             <span class="product__properties">Рост 30 см, вес 200 г</span>
 
             <span class="product__price">1 200 руб.</span>
-            <button class="product__basket">
+            <button type="button" class="product__basket">
               <svg width="20.294" height="18.849">
                 <use xlink:href='#icon-cart' />
               </svg>
@@ -163,7 +164,7 @@
         <article class="product">
 
           <div class="product__img">
-            <img src="img/photo-2-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+            <img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзина для белья">
           </div>
 
           <div class="product__container">
@@ -173,7 +174,7 @@
             <span class="product__properties">Диаметр 15 см, высота 10 см</span>
 
             <span class="product__price">690 руб.</span>
-            <button class="product__basket">
+            <button type="button" class="product__basket">
               <svg width="20.294" height="18.849">
                 <use xlink:href='#icon-cart' />
               </svg>
@@ -186,7 +187,7 @@
         <article class="product">
 
           <div class="product__img">
-            <img src="img/photo-3-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+            <img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
           </div>
 
           <div class="product__container">
@@ -196,7 +197,7 @@
             <span class="product__properties">Диаметр 30 см, высота 30 см</span>
 
             <span class="product__price">1 500 руб.</span>
-            <button class="product__basket">
+            <button type="button" class="product__basket">
               <svg width="20.294" height="18.849">
                 <use xlink:href='#icon-cart' />
               </svg>
@@ -221,12 +222,12 @@
           </div>
 
           <div class="production-process__img">
-            <img src="img/video-mobile@1x.jpg" alt="">
+            <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео процесса">
           </div>
 
           <div class="production-process__container">
             <p class="production-process__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <button class="btn">Сделать заказ</button>
+            <button type="button" class="btn">Сделать заказ</button>
           </div>
 
         </article>
@@ -281,11 +282,11 @@
     <h2 class="popup__title">Добавить<br> в корзину</h2>
 
     <span class="popup__text">Выберите размер:</span>
-    <label class="popup__size" for=""><input type="radio" id="s" name="size" checked>S</label>
-    <label class="popup__size" for=""><input type="radio" id="m" name="size">M</label>
-    <label class="popup__size" for=""><input type="radio" id="l" name="size">L</label>
+    <label class="popup__size"><input type="radio" id="s" name="size" checked>S</label>
+    <label class="popup__size"><input type="radio" id="m" name="size">M</label>
+    <label class="popup__size"><input type="radio" id="l" name="size">L</label>
 
-    <button class="btn popup--btn">Добавить</button>
+    <button class="btn">Добавить</button>
 
   </div>
 

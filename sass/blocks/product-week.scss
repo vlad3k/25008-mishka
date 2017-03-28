@@ -10,13 +10,13 @@
   &__title {
     margin-bottom: 4px;
     padding-left: 1px;
-    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 25px;
   }
 
   &__label {
-    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 17px;
     line-height: 20px;
@@ -29,7 +29,7 @@
   }
 
   &__desc {
-    font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
+    font-family: $OpenSans;
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
@@ -69,7 +69,7 @@
     display: block;
     margin: 15px 0;
     margin-bottom: 26px;
-    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
@@ -133,6 +133,8 @@
 
     &__properties {
       margin-top: 35px;
+      height: 48%;
+      overflow: auto;
     }
 
     &__order {

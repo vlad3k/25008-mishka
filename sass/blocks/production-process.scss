@@ -3,6 +3,7 @@
   padding-bottom: 32px;
   border: 1px solid #ededed;
   box-sizing: border-box;
+  transition: 0.2s;
   &:hover {
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
   }
@@ -12,26 +13,26 @@
 
   &__img {
     position: relative;
-    &::before {
+    &:before {
       content: "";
       position: absolute;
       top: calc(50% - 38px);
       left: calc(50% - 50px);
       width: 100px;
       height: 76px;
-      background-image: url(../img/icon-play.svg);
-      background-repeat: no-repeat;
+      background: url(../img/icon-play.svg) no-repeat;
       cursor: pointer;
+      transition: 0.2s;
     }
     &:hover {
-      &::before {
+      &:before {
         width: 120px;
         height: 91.2px;
         transform: scale(1.2, 1.2);
       }
     }
     &:active {
-      &::before {
+      &:before {
         transform: scale(0.8, 0.8);
         opacity: 0.3;
       }
@@ -46,11 +47,11 @@
 
   &__title {
     position: relative;
-    font-family: "OpenSans bold";
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
-    &::before {
+    &:before {
       content: "";
       position: absolute;
       top: 6px;
@@ -69,7 +70,7 @@
 
   &__desc {
     margin-bottom: 26px;
-    font-family: "OpenSans";
+    font-family: $OpenSans;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
@@ -99,7 +100,7 @@
       font-size: 20px;
       line-height: 24px;
 
-      &::before {
+      &:before {
         top: -5px;
         left: -50px;
       }
@@ -150,7 +151,7 @@
     &__title {
       width: 200px;
 
-      &::before {
+      &:before {
         top: -56px;
         left: 18px;
       }

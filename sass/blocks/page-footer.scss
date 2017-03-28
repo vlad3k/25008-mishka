@@ -21,7 +21,7 @@
   &__text {
     align-self: center;
     margin-left: 15px;
-    font-family: "OpenSans bold";
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 19px;
     line-height: 3px;
@@ -80,6 +80,7 @@
       flex-grow: 0.5;
       margin-left: 0;
       padding-top: 23px;
+      width: 32%;
       border: none;
     }
     &__social-link {
@@ -89,6 +90,7 @@
       flex-grow: 1;
       display: block;
       align-self: center;
+      width: 20%;
       svg {
         &:hover {
           fill: $color-light-green;
@@ -98,12 +100,24 @@
         }
       }
     }
-    &__copyrigth {
-      flex-grow: 1;
+    &__copyright {
+      width: 28%;
       color: rgba(#000, 0.3);
       cursor: pointer;
-      &:hover {
-        color: red;
+    }
+
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      span{
+        margin-top: 6px;
+        display: block;
+        margin-right: 25px;
+      }
+      svg {
+        margin-left: 0;
       }
     }
   }

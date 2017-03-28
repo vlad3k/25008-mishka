@@ -3,7 +3,7 @@
 
   &__title {
     margin-bottom: 25px;
-    font-family: "OpenSans bold";
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
@@ -15,7 +15,7 @@
 
   &__text {
     margin-bottom: 25px;
-    font-family: "OpenSans";
+    font-family: $OpenSans;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
@@ -24,7 +24,7 @@
   }
 
   &__author {
-    font-family: "OpenSans bold";
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
@@ -34,7 +34,7 @@
   &__link {
     display: block;
     margin-top: 3px;
-    font-family: "OpenSans";
+    font-family: $OpenSans;
     font-weight: normal;
     font-style: normal;
     font-size: 17px;
@@ -50,22 +50,12 @@
   &__arrow {
     position: relative;
     display: inline-block;
-    width: 130px;
+    width: 100%;
     height: 52px;
     background-color: $color-white;
     border: 1px solid $color-gray;
     vertical-align: top;
     cursor: pointer;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 12px;
-      left: 38px;
-      width: 51px;
-      height: 26px;
-      background-image: url(../img/icon-left-arrow.svg);
-      background-repeat: no-repeat;
-      }
     &:hover {
       opacity: 0.6;
     }
@@ -74,9 +64,30 @@
     }
   }
 
+  &__arrow--left {
+    width: 50%;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 30%;
+      width: 51px;
+      height: 26px;
+      background-image: url(../img/icon-left-arrow.svg) no-repeat;
+    }
+  }
+
   &__arrow--right {
+    width: 50%;
     border-left: none;
-    &::after {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: 30%;
+      width: 51px;
+      height: 26px;
+      background-image: url(../img/icon-left-arrow.svg) no-repeat;
       transform: rotate(180deg);
     }
   }

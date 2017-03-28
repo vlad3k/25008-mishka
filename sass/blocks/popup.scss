@@ -5,7 +5,7 @@
 
   &__title {
     margin-bottom: 12px;
-    font-family: "OpenSans bold";
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
@@ -16,7 +16,7 @@
   &__text {
     display: block;
     margin-bottom: 30px;
-    font-family: "OpenSans";
+    font-family: $OpenSans;
     font-weight: normal;
     font-size: 15px;
     line-height: 30px;
@@ -26,7 +26,7 @@
   &__size {
     margin-bottom: 30px;
     padding: 20px 34px;
-    font-family: "OpenSans bold";
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 17px;
     line-height: 16px;

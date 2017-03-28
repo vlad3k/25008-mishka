@@ -26,7 +26,7 @@
     position: relative;
     cursor: pointer;
     span {
-      &::after {
+      &:after {
         position: absolute;
         content: "";
         display: none;
@@ -38,7 +38,7 @@
         border-radius: 50%;
       }
     }
-    &::before {
+    &:before {
       position: absolute;
       content: "";
       width: 37px;
@@ -49,12 +49,12 @@
       border-radius: 50%;
     }
     &:hover {
-      &::before {
+      &:before {
         border-color: $color-light-green;
       }
     }
     &:active {
-      &::before {
+      &:before {
         border-color: #cdcdcd;
       }
     }
@@ -64,7 +64,7 @@
     position: relative;
     cursor: pointer;
     span {
-      &::after {
+      &:after {
         position: absolute;
         content: "";
         top: 10px;
@@ -73,12 +73,11 @@
         width: 37px;
         height: 37px;
         background-color: transparent;
-        background-image: url(../img/icon-tick.svg);
+        background: url(../img/icon-tick.svg) no-repeat;
         background-size: calc(70%);
-        background-repeat: no-repeat;
       }
     }
-    &::before {
+    &:before {
       position: absolute;
       content: "";
       width: 37px;
@@ -88,25 +87,25 @@
       border: 2px solid $color-light-text;
     }
     &:hover {
-      &::before {
+      &:before {
         border-color: $color-light-green;
       }
     }
     &:active {
-      &::before {
+      &:before {
         border-color: #cdcdcd;
       }
     }
   }
 
-  &--phone + svg {
+  &__text--phone + svg {
     position: absolute;
     right: 8px;
     bottom: 15px;
     fill: rgba(#000, 0.3);
   }
 
-  &--email + svg {
+  &__text--email + svg {
     position: absolute;
     right: 3px;
     bottom: 10px;
@@ -144,7 +143,7 @@
     }
   }
 
-  &--phone {
+  &__text--phone {
     &:hover {
       & + svg {
         fill: $color-light-green;
@@ -161,7 +160,7 @@
     width: 100%;
   }
 
-  &--email {
+  &__text--email {
     &:hover {
       & + svg {
         fill: $color-light-green;
@@ -206,7 +205,7 @@
       font-size: 19px;
       line-height: 18px;
     }
-    &__label--type::before {
+    &__label--type:before {
       width: 48px;
       height: 48px;
     }
@@ -217,19 +216,19 @@
       margin-bottom: 24px;
     }
     &__label--type {
-      span::after {
+      span:after {
         top: 15px;
         left: 15px;
         width: 22px;
         height: 22px;
       }
     }
-    &__label--color::before {
+    &__label--color:before {
       width: 48px;
       height: 48px;
     }
     &__label--color {
-      span::after {
+      span:after {
         top: 15px;
         left: 10px;
         background-size: auto;
@@ -261,7 +260,7 @@
       padding-top: 15px;
       padding-bottom: 14px;
       padding-left: 18px;
-      font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
+      font-family: $OpenSans;
       font-size: 19px;
       line-height: 18px;
     }
@@ -304,16 +303,16 @@
 
 
 //Активация радио и чекбоксов
-#accessories:checked   + span::after,
-#toy:checked           + span::after {
+#accessories:checked   + span:after,
+#toy:checked           + span:after {
   display: block;
 }
 
-#color-white:checked   + span::after,
-#color-gray:checked    + span::after,
-#color-tiffany:checked + span::after,
-#color-black:checked   + span::after,
-#color-pink:checked    + span::after,
-#color-orange:checked  + span::after {
+#color-white:checked   + span:after,
+#color-gray:checked    + span:after,
+#color-tiffany:checked + span:after,
+#color-black:checked   + span:after,
+#color-pink:checked    + span:after,
+#color-orange:checked  + span:after {
   display: block;
 }
