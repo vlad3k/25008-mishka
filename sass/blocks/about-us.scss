@@ -1,106 +1,107 @@
 .about-us {
   padding-top: 40px;
   padding-bottom: 26px;
+}
 
-  &__title {
-    margin-bottom: 31px;
-    font-family: $OpenSans;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
-    color: $color-black;
+.about-us__title {
+  margin-bottom: 31px;
+  font-family: $OpenSans;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-black;
+}
+
+.about-us__items {
+  font-family: $OpenSans;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-black;
+}
+
+.about-us__item {
+  padding-top: 55px;
+  margin-bottom: 28px;
+}
+
+.about-us__desc--icon-flower {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: -53px;
+    left: 8px;
+    width: 32px;
+    height: 38px;
+    background: url(../img/icon-feature-1.svg) no-repeat;;
+  }
+}
+
+.about-us__desc--icon-money {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: -52px;
+    left: 0;
+    width: 47px;
+    height: 28px;
+    background: url(../img/icon-feature-3.svg) no-repeat;;
+  }
+}
+
+.about-us__desc--icon-like {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: -47px;
+    left: 8px;
+    width: 34px;
+    height: 28px;
+    background: url(../img/icon-feature-5.svg) no-repeat;;
+  }
+}
+
+.about-us__desc--icon-ball {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 3px;
+    width: 35px;
+    height: 35px;
+    background: url(../img/icon-feature-2.svg) no-repeat;;
+  }
+}
+
+.about-us__desc--icon-rocket {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: -49px;
+    left: -6px;
+    width: 55px;
+    height: 24px;
+    background: url(../img/icon-feature-4.svg) no-repeat;;
+  }
+}
+
+.about-us__desc--icon-gift {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: -51px;
+    left: 3px;
+    width: 33px;
+    height: 33px;
+    background: url(../img/icon-feature-6.svg) no-repeat;;
   }
 
-  &__items {
-    font-family: $OpenSans;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
-    color: $color-black;
-  }
-
-  &__item {
-    padding-top: 55px;
-    margin-bottom: 28px;
-  }
-
-  &__desc--icon-flower {
-    position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      top: -53px;
-      left: 8px;
-      width: 32px;
-      height: 38px;
-      background: url(../img/icon-feature-1.svg) no-repeat;;
-    }
-  }
-
-  &__desc--icon-money {
-    position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      top: -52px;
-      left: 0;
-      width: 47px;
-      height: 28px;
-      background: url(../img/icon-feature-3.svg) no-repeat;;
-    }
-  }
-
-  &__desc--icon-like {
-    position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      top: -47px;
-      left: 8px;
-      width: 34px;
-      height: 28px;
-      background: url(../img/icon-feature-5.svg) no-repeat;;
-    }
-  }
-
-  &__desc--icon-ball {
-    position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      top: -50px;
-      left: 3px;
-      width: 35px;
-      height: 35px;
-      background: url(../img/icon-feature-2.svg) no-repeat;;
-    }
-  }
-
-  &__desc--icon-rocket {
-    position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      top: -49px;
-      left: -6px;
-      width: 55px;
-      height: 24px;
-      background: url(../img/icon-feature-4.svg) no-repeat;;
-    }
-  }
-
-  &__desc--icon-gift {
-    position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      top: -51px;
-      left: 3px;
-      width: 33px;
-      height: 33px;
-      background: url(../img/icon-feature-6.svg) no-repeat;;
-    }
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -109,99 +110,100 @@
     padding-top: 49px;
     padding-bottom: 25px;
     box-sizing: border-box;
-
-    &__title {
-      margin-bottom: 47px;
-      font-size: 43px;
-      line-height: 50px;
-    }
-
-    &__items {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap
-    }
-
-    &__desc {
-      font-size: 20px;
-      line-height: 22px;
-    }
-
-    &__item {
-      display: flex;
-      margin-bottom: -4px;
-      padding-right: 109px;
-      width: 50%;
-      min-height: 160px;
-      box-sizing: border-box;
-    }
-
-    &__item--icon-flower {
-      order: 0;
-    }
-
-    &__item--icon-money {
-      order: 2;
-      padding-right: 70px;
-    }
-
-    &__item--icon-ball {
-      order: 1;
-      padding-right: 50px;
-    }
-
-    &__item--icon-rocket {
-      order: 3;
-      padding-right: 20px;
-    }
-
-    &__item--icon-like {
-      order: 4;
-    }
-
-    &__item--icon-gift {
-      order: 5;
-      padding-right: 50px;
-    }
-
   }
+
+  .about-us__title {
+    margin-bottom: 47px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+  }
+
+  .about-us__desc {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__item {
+    display: flex;
+    margin-bottom: -4px;
+    padding-right: 109px;
+    width: 50%;
+    min-height: 160px;
+    box-sizing: border-box;
+  }
+
+  .about-us__item--icon-flower {
+    order: 0;
+  }
+
+  .about-us__item--icon-money {
+    order: 2;
+    padding-right: 70px;
+  }
+
+  .about-us__item--icon-ball {
+    order: 1;
+    padding-right: 50px;
+  }
+
+  .about-us__item--icon-rocket {
+    order: 3;
+    padding-right: 20px;
+  }
+
+  .about-us__item--icon-like {
+    order: 4;
+  }
+
+  .about-us__item--icon-gift {
+    order: 5;
+    padding-right: 50px;
+  }
+
 }
 
 @media screen and (min-width: 1150px) {
 
   .about-us {
     padding-top: 60px;
-
-    &__title {
-      padding-left: 170px;
-      font-size: 53px;
-      line-height: 57px;
-    }
-
-    &__item--icon-flower {
-      padding-left: 175px;
-      padding-right: 120px;
-    }
-
-    &__item--icon-like {
-      padding-left: 175px;
-    }
-
-    &__item--icon-money {
-      padding-left: 175px;
-      padding-right: 110px;
-    }
-
-    &__item--icon-ball {
-      padding-right: 250px;
-    }
-
-    &__item--icon-rocket {
-      padding-right: 210px;
-    }
-
-    &__item--icon-gift {
-      padding-right: 250px;
-    }
   }
+
+  .about-us__title {
+    padding-left: 170px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__item--icon-flower {
+    padding-left: 175px;
+    padding-right: 120px;
+  }
+
+  .about-us__item--icon-like {
+    padding-left: 175px;
+  }
+
+  .about-us__item--icon-money {
+    padding-left: 175px;
+    padding-right: 110px;
+  }
+
+  .about-us__item--icon-ball {
+    padding-right: 250px;
+  }
+
+  .about-us__item--icon-rocket {
+    padding-right: 210px;
+  }
+
+  .about-us__item--icon-gift {
+    padding-right: 250px;
+  }
+
 }

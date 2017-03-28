@@ -10,64 +10,65 @@
   &:active {
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
   }
+}
 
-  &__container {
-    padding-top: 25px;
-    padding-left: 27px;
-    padding-right: 25px;
-    border: 1px solid $color-gray;
+.product__container {
+  padding-top: 25px;
+  padding-left: 27px;
+  padding-right: 25px;
+  border: 1px solid $color-gray;
+}
+
+.product__img {
+  min-height: 195px;
+  overflow: hidden;
+}
+
+.product__title {
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-family: $OpenSans;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000;
+  &:hover {
+    color: rgba(#000, 0.6);
   }
-
-  &__img {
-    min-height: 195px;
-    overflow: hidden;
-  }
-
-  &__title {
-    margin-top: 3px;
-    margin-bottom: 5px;
-    font-family: $OpenSans;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 24px;
-    color: #000;
-    &:hover {
-      color: rgba(#000, 0.6);
-    }
-    &:active {
-      color: rgba(#000, 0.3);
-    }
-  }
-
-  &__properties {
-    display: block;
-    margin-bottom: 40px;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 30px;
-  }
-
-  &__price {
-    display: block;
-    padding-bottom: 28px;
-    font-family: $OpenSans;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  &__basket {
-    position: absolute;
-    bottom: 25px;
-    right: 24px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    svg {
-      fill: #d3d2d2;
-    }
+  &:active {
+    color: rgba(#000, 0.3);
   }
 }
+
+.product__properties {
+  display: block;
+  margin-bottom: 40px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.product__price {
+  display: block;
+  padding-bottom: 28px;
+  font-family: $OpenSans;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.product__basket {
+  position: absolute;
+  bottom: 25px;
+  right: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  svg {
+    fill: #d3d2d2;
+  }
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -76,54 +77,55 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin-bottom: 52px;
+  }
 
-    &__img {
-      width: 50%;
-      height: 335px;
-    }
+  .product__img {
+    width: 50%;
+    height: 335px;
+  }
 
-    &__container {
-      display: flex;
-      flex-direction: column;
-      box-sizing: border-box;
-      padding-bottom: 25px;
-      width: 50%;
-      flex-grow: 2;
-    }
+  .product__container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+    width: 50%;
+    flex-grow: 2;
+  }
 
-    &__title {
-      margin-bottom: 5px;
-      font-size: 20px;
-      line-height: 24px;
-    }
+  .product__title {
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 
-    &__properties {
-      display: block;
-      margin-bottom: 20px;
-      font-size: 15px;
-      line-height: 30px;
-    }
+  .product__properties {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 30px;
+  }
 
-    &__price {
-      margin-top: auto;
-      padding: 0;
-      font-size: 17px;
-      line-height: 24px;
-    }
+  .product__price {
+    margin-top: auto;
+    padding: 0;
+    font-size: 17px;
+    line-height: 24px;
+  }
 
-    &__basket {
-      &:hover {
-        svg {
-          fill: $color-light-green;
-        }
+  .product__basket {
+    &:hover {
+      svg {
+        fill: $color-light-green;
       }
-      &:active {
-        svg {
-          fill: rgba($color-light-green, 0.3);
-        }
+    }
+    &:active {
+      svg {
+        fill: rgba($color-light-green, 0.3);
       }
     }
   }
+
 }
 
 @media screen and (min-width: 1150px) {
@@ -133,20 +135,21 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
-    &__img {
-      width: 100%;
-      height: 462px;
-    }
-
-    &__container {
-      padding-top: 23px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    &__properties {
-      margin-bottom: 37px;
-    }
   }
+
+  .product__img {
+    width: 100%;
+    height: 462px;
+  }
+
+  .product__container {
+    padding-top: 23px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .product__properties {
+    margin-bottom: 37px;
+  }
+
 }

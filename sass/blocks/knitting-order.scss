@@ -1,168 +1,164 @@
 .knitting-order {
   margin-bottom: 32px;
+}
 
-  &__desc {
-    margin-top: 25px;
-    min-width: 260px;
-    font-size: 13px;
-    line-height: 24px;
-  }
+.knitting-order__desc {
+  margin-top: 25px;
+  min-width: 260px;
+  font-size: 13px;
+  line-height: 24px;
+}
 
-  &__title {
-    margin-bottom: 25px;
-    width: 100%;
-    font-family: $OpenSans;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 16px;
-    color: $color-light-green;
-    text-transform: uppercase;
-  }
+.knitting-order__title {
+  margin-bottom: 25px;
+  width: 100%;
+  font-family: $OpenSans;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-light-green;
+  text-transform: uppercase;
+}
 
-  &__type {
-    padding-top: 25px;
-  }
+.knitting-order__type {
+  padding-top: 25px;
+}
 
-  &__color {
-    padding-top: 29px;
-  }
+.knitting-order__color {
+  padding-top: 29px;
+}
 
-  &__name {
-    padding-top: 11px;
-  }
+.knitting-order__name {
+  padding-top: 11px;
+}
 
-  &__title--name {
-    margin-bottom: 19px;
-  }
+.knitting-order__title--name {
+  margin-bottom: 19px;
+}
 
-  &__contacts {
-    padding-top: 22px;
-  }
+.knitting-order__contacts {
+  padding-top: 22px;
+}
 
-  &__title--email {
-    padding-top: 30px;
-  }
+.knitting-order__title--email {
+  padding-top: 30px;
+}
 
-  &__title--phone {
-    margin-bottom: 20px;
-  }
+.knitting-order__title--phone {
+  margin-bottom: 20px;
+}
 
-  &__title--email {
-    margin-bottom: 22px;
-  }
+.knitting-order__title--email {
+  margin-bottom: 22px;
+}
 
-  &__extra {
-    padding-top: 31px;
-  }
+.knitting-order__extra {
+  padding-top: 31px;
+}
 
-  &__text {
-    display: block;
-    margin-bottom: 31px;
-    font-size: 14px;
-    line-height: 16px;
-  }
+.knitting-order__text {
+  display: block;
+  margin-bottom: 31px;
+  font-size: 14px;
+  line-height: 16px;
+}
 
-  &__btn {
-    width: 100%;
-  }
+.knitting-order__btn {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
 
-  .knitting-order {
+  .knitting-order__desc {
+    margin-top: 78px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 
-    &__desc {
-      margin-top: 78px;
-      font-size: 17px;
-      line-height: 30px;
-    }
+  .knitting-order__type {
+    padding-top: 55px;
+    padding-bottom: 27px;
+  }
 
-    &__type {
-      padding-top: 55px;
-      padding-bottom: 27px;
-    }
+  .knitting-order__title {
+    display: inline-block;
+    width: 25%;
+  }
 
-    &__title {
-      display: inline-block;
-      width: 25%;
-    }
+  .knitting-order__color {
+    padding-top: 49px;
+    padding-bottom: 24px;
+    background: #f1f1f1;
+  }
 
-    &__color {
-      padding-top: 49px;
-      padding-bottom: 24px;
-      background: #f1f1f1;
-    }
+  .knitting-order__name {
+    padding-top: 50px;
+    padding-bottom: 26px;
+  }
 
-    &__name {
-      padding-top: 50px;
-      padding-bottom: 26px;
-    }
+  .knitting-order__contacts {
+    padding-top: 50px;
+    padding-bottom: 46px;
+    background: #f1f1f1;
+  }
 
-    &__contacts {
-      padding-top: 50px;
-      padding-bottom: 46px;
-      background: #f1f1f1;
-    }
+  .knitting-order__title--email {
+    padding-top: 40px;
+  }
 
-    &__title--email {
-      padding-top: 40px;
-    }
-
-    &__extra {
-      padding-top: 50px;
-      margin-bottom: 38px;
-      .container {
-        display: flex;
-      }
-    }
-
-    &__bottom {
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-    }
-
-    &__btn {
-      order: -1;
-      padding: 0 10px;
-      width: 230px;
-      height: 52px;
-    }
-
-    &__text {
-      padding-top: 10px;
-      font-size: 17px;
-      line-height: 30px;
+  .knitting-order__extra {
+    padding-top: 50px;
+    margin-bottom: 38px;
+    .container {
+      display: flex;
     }
   }
+
+  .knitting-order__bottom {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .knitting-order__btn {
+    order: -1;
+    padding: 0 10px;
+    width: 230px;
+    height: 52px;
+  }
+
+  .knitting-order__text {
+    padding-top: 10px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
 }
 
 @media screen and (min-width: 1150px) {
 
-  .knitting-order {
+  .knitting-order__desc {
+    margin-top: 125px;
+    width: 700px;
+  }
 
-    &__desc {
-      margin-top: 125px;
-      width: 700px;
-    }
+  .knitting-order__title {
+    width: 175px;
+    text-align: center;
+  }
 
-    &__title {
-      width: 175px;
-      text-align: center;
-    }
-
-    &__contacts {
-      input {
-        width: 100%;
-      }
-    }
-
-    &__bottom {
-      .container {
-        width: 700px;
-      }
+  .knitting-order__contacts {
+    input {
+      width: 100%;
     }
   }
+
+  .knitting-order__bottom {
+    .container {
+      width: 700px;
+    }
+  }
+
 }

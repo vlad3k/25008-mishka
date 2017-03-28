@@ -1,72 +1,74 @@
 .page-footer {
   padding-top: 22px;
   background: $color-bg-gray;
-  &__social {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-end;
-    margin-left: 35px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #e5e5e5;
-  }
+}
 
-  &__copyright {
-    display: flex;
-    justify-content: center;
-    padding-top: 8px;
-    padding-bottom: 20px;
-    text-align: center;
+.page-footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 35px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.page-footer__text {
+  align-self: center;
+  margin-left: 15px;
+  font-family: $OpenSans;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 3px;
+  color: $color-black;
+  svg {
+    margin-top: 12px;
+    margin-left: 10px;
   }
-  &__text {
-    align-self: center;
-    margin-left: 15px;
-    font-family: $OpenSans;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 3px;
-    color: $color-black;
+  &:hover {
     svg {
-      margin-top: 12px;
-      margin-left: 10px;
+      fill: $color-dark-green;
     }
-    &:hover {
-      svg {
-        fill: $color-dark-green;
-      }
+  }
+  &:active {
+    color: rgba(#000, 0.3);
+    svg {
+      opacity: 0.3;
     }
-    &:active {
-      color: rgba(#000, 0.3);
-      svg {
-        opacity: 0.3;
-      }
-    }
-    svg{
+  }
+  svg{
+    fill: $color-light-green;
+  }
+}
+.page-footer__logo {
+  display: none;
+}
+.page-footer__social-link {
+  margin-right: 36px;
+  &:hover {
+    svg {
       fill: $color-light-green;
     }
   }
-  &__logo {
-    display: none;
-  }
-  &__social-link {
-    margin-right: 36px;
-    &:hover {
-      svg {
-        fill: $color-light-green;
-      }
+  &:active {
+    svg {
+      fill: rgba($color-light-green, 0.3);
     }
-    &:active {
-      svg {
-        fill: rgba($color-light-green, 0.3);
-      }
-    }
-  }
-
-  &__link {
-    padding-right: 22px;
-    padding-left: 30px;
   }
 }
+
+.page-footer__link {
+  padding-right: 22px;
+  padding-left: 30px;
+}
+
 
 @media screen and (min-width: 768px) {
   .page-footer {
