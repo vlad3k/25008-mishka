@@ -3,6 +3,7 @@
   width: 100%;
   margin-bottom: 29px;
   cursor: pointer;
+  transition: 0.2s;
   &:hover {
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
   }
@@ -19,12 +20,13 @@
 
   &__img {
     min-height: 195px;
+    overflow: hidden;
   }
 
   &__title {
     margin-top: 3px;
     margin-bottom: 5px;
-    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
@@ -48,7 +50,7 @@
   &__price {
     display: block;
     padding-bottom: 28px;
-    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 15px;
     line-height: 24px;

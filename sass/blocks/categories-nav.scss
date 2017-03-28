@@ -17,11 +17,13 @@
     padding-top: 25px;
     padding-left: 30px;
     padding-bottom: 30px;
-    font-family: "OpenSans bold";
+    font-family: $OpenSans;
+    font-weight: bold;
     font-size: 19px;
     line-height: 24px;
     color: $color-white;
     box-sizing: border-box;
+    transition: 0.2s;
 
     span {
       display: block;
@@ -32,16 +34,14 @@
       position: relative;
       padding-right: 100px;
       background-color: $color-light-green;
-      &::after {
+      &:after {
         content: "";
         position: absolute;
         top: 24px;
         right: 16px;
         width: 60px;
         height: 60px;
-        background-image: url(../img/icon-interior.svg);
-        background-repeat: no-repeat;
-        background-position: 0 0;
+        background: url(../img/icon-interior.svg) no-repeat 0 0;
         opacity: 0.5;
       }
     }
@@ -50,16 +50,14 @@
       position: relative;
       padding-right: 130px;
       background-color: $color-dark-green;
-      &::after {
+      &:after {
         content: "";
         position: absolute;
         top: 21px;
         right: 27px;
         width: 60px;
         height: 60px;
-        background-image: url(../img/icon-toy.svg);
-        background-repeat: no-repeat;
-        background-position: 0 0;
+        background: url(../img/icon-toy.svg) no-repeat 0 0;
         opacity: 0.5;
       }
     }
@@ -73,7 +71,7 @@
     position: relative;
     margin-top: -115px;
     margin-bottom: 2px;
-    &::after {
+    &:after {
       z-index: 10;
       position: absolute;
       content: "";
@@ -111,14 +109,14 @@
       }
       &:active {
         color: rgba(#fff, 0.3);
-        &::after {
+        &:after {
           opacity: 0.3;
         }
       }
     }
 
     &__link--interior {
-      &::after {
+      &:after {
         top: 30px;
         right: 16px;
       }
@@ -127,7 +125,7 @@
     &__link--toys {
       padding-top: 28px;
       padding-left: 29px;
-      &::after {
+      &:after {
         top: 31px;
         right: 35px;
       }
@@ -139,7 +137,7 @@
 
   .categories-nav {
     margin-top: -115px;
-    &::after {
+    &:after {
       bottom: -3px;
       left: 0;
       background-size: auto;
@@ -160,13 +158,13 @@
     }
 
     &__link--interior {
-      &::after {
+      &:after {
         left: 450px;
       }
     }
 
     &__link--toys {
-      &::after {
+      &:after {
         left: 430px;
       }
     }

@@ -11,7 +11,7 @@
   &__title {
     margin-bottom: 25px;
     width: 100%;
-    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 17px;
     line-height: 16px;
@@ -111,10 +111,12 @@
     &__extra {
       padding-top: 50px;
       margin-bottom: 38px;
+      .container {
+        display: flex;
+      }
     }
 
     &__bottom {
-
       .container {
         display: flex;
         flex-wrap: wrap;

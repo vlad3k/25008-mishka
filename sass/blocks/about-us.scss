@@ -4,7 +4,7 @@
 
   &__title {
     margin-bottom: 31px;
-    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
@@ -12,7 +12,7 @@
   }
 
   &__items {
-    font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
+    font-family: $OpenSans;
     font-weight: bold;
     font-size: 17px;
     line-height: 20px;
@@ -26,7 +26,7 @@
 
   &__desc--icon-flower {
     position: relative;
-    &::after {
+    &:after {
       content: "";
       position: absolute;
       top: -53px;
@@ -39,7 +39,7 @@
 
   &__desc--icon-money {
     position: relative;
-    &::after {
+    &:after {
       content: "";
       position: absolute;
       top: -52px;
@@ -52,7 +52,7 @@
 
   &__desc--icon-like {
     position: relative;
-    &::after {
+    &:after {
       content: "";
       position: absolute;
       top: -47px;
@@ -65,7 +65,7 @@
 
   &__desc--icon-ball {
     position: relative;
-    &::after {
+    &:after {
       content: "";
       position: absolute;
       top: -50px;
@@ -78,7 +78,7 @@
 
   &__desc--icon-rocket {
     position: relative;
-    &::after {
+    &:after {
       content: "";
       position: absolute;
       top: -49px;
@@ -91,7 +91,7 @@
 
   &__desc--icon-gift {
     position: relative;
-    &::after {
+    &:after {
       content: "";
       position: absolute;
       top: -51px;

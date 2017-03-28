@@ -1,4 +1,10 @@
 .body {
   margin: 0;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  min-width: 320px;
+  font-family: $OpenSans;
+  font-weight: normal;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
