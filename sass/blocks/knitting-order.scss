@@ -12,7 +12,7 @@
 .knitting-order__title {
   margin-bottom: 25px;
   width: 100%;
-  font-family: $OpenSans;
+  font-family: $font-family;
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
@@ -83,6 +83,10 @@
   .knitting-order__title {
     display: inline-block;
     width: 25%;
+
+    &--extra {
+      vertical-align: top;
+    }
   }
 
   .knitting-order__color {
@@ -109,9 +113,6 @@
   .knitting-order__extra {
     padding-top: 50px;
     margin-bottom: 38px;
-    .container {
-      display: flex;
-    }
   }
 
   .knitting-order__bottom {
@@ -127,6 +128,7 @@
     padding: 0 10px;
     width: 230px;
     height: 52px;
+    margin-left: 25%;
   }
 
   .knitting-order__text {
@@ -155,10 +157,8 @@
     }
   }
 
-  .knitting-order__bottom {
-    .container {
-      width: 700px;
-    }
+  .knitting-order__btn {
+    margin-left: 175px;
   }
 
 }

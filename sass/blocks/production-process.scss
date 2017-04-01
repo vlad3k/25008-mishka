@@ -48,7 +48,7 @@
 
 .production-process__title {
   position: relative;
-  font-family: $OpenSans;
+  font-family: $font-family;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -71,15 +71,14 @@
 
 .production-process__desc {
   margin-bottom: 26px;
-  font-family: $OpenSans;
+  font-family: $font-family;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-}
-
-.btn {
-  padding: 14px;
-  width: 100%;
+  .btn {
+    padding: 14px;
+    width: 100%;
+  }
 }
 
 
@@ -123,11 +122,10 @@
     width: 576px;
     font-size: 15px;
     line-height: 30px;
-  }
-
-  .btn {
-    margin-bottom: 13px;
-    margin-left: 9px;
+    .btn {
+      margin-bottom: 13px;
+      margin-left: 9px;
+    }
   }
 
 }
@@ -166,10 +164,9 @@
   .production-process__desc {
     margin-bottom: 46px;
     width: auto;
-  }
-
-  .btn {
-    width: 230px;
+    .btn {
+      width: 230px;
+    }
   }
 
 }

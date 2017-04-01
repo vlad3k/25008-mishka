@@ -15,15 +15,16 @@
   width: 100%;
   vertical-align: middle;
 }
+
 .knitting-order-list__label {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 64px;
-  font-family: "OpenSans bold", "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
 }
+
 .knitting-order-list__label--type {
   position: relative;
   cursor: pointer;
@@ -117,16 +118,19 @@
 .knitting-order-list__item--color {
   margin-bottom: 21px;
 }
+
 .knitting-order-list__label--name {
   width: 100%;
   padding-left: 0;
 }
+
 .knitting-order-list__label--name {
   span {
     display: block;
     margin-bottom: 11px;
   }
 }
+
 .knitting-order-list__text {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -245,9 +249,9 @@
     padding-left: 0;
     width: 100%;
     span {
-    display: inline-block;
-    padding-right: 25px;
-    width: auto;
+      display: inline-block;
+      padding-right: 25px;
+      width: auto;
     }
   }
   .knitting-order-list__text--firstname {
@@ -263,7 +267,7 @@
     padding-top: 15px;
     padding-bottom: 14px;
     padding-left: 18px;
-    font-family: $OpenSans;
+    font-family: $font-family;
     font-size: 19px;
     line-height: 18px;
   }
@@ -279,8 +283,9 @@
   }
 
   .knitting-order-list__textarea {
+    display: inline-flex;
     padding-left: 18px;
-    width: 100%;
+    width: 73%;
   }
 
 }
@@ -299,24 +304,25 @@
   .knitting-order-list__text--patronymic {
     width: 79%;
   }
-  .knitting-order-list__textarea {
-    width: 100%;
-  }
 
+  .knitting-order-list__textarea {
+    display: inline-flex;
+    padding-left: 18px;
+    width: 82%;
+  }
 }
 
-
 //Активация радио и чекбоксов
-#accessories:checked   + span:after,
-#toy:checked           + span:after {
+#accessories:checked + span:after,
+#toy:checked + span:after {
   display: block;
 }
 
-#color-white:checked   + span:after,
-#color-gray:checked    + span:after,
+#color-white:checked + span:after,
+#color-gray:checked + span:after,
 #color-tiffany:checked + span:after,
-#color-black:checked   + span:after,
-#color-pink:checked    + span:after,
-#color-orange:checked  + span:after {
+#color-black:checked + span:after,
+#color-pink:checked + span:after,
+#color-orange:checked + span:after {
   display: block;
 }

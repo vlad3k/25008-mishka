@@ -21,7 +21,7 @@
     padding-left: 8px;
     padding-right: 8px;
     width: 260px;
-    font-family: $OpenSans;
+    font-family: $font-family;
     font-size: 27px;
     line-height: 30px;
 }
@@ -32,7 +32,7 @@
     position: relative;
     margin-top: -83px;
     padding-top: 153px;
-    height: 742px;
+    min-height: 742px;
     border-top: 1px solid $color-gray;
     background: #ffffff url(../img/hero-desktop@1x.jpg) no-repeat center 0;
     background-size: cover;

@@ -27,7 +27,7 @@
 .product__title {
   margin-top: 3px;
   margin-bottom: 5px;
-  font-family: $OpenSans;
+  font-family: $font-family;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -51,7 +51,7 @@
 .product__price {
   display: block;
   padding-bottom: 28px;
-  font-family: $OpenSans;
+  font-family: $font-family;
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;

@@ -9,15 +9,15 @@
 }
 
 .product-week__title {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   padding-left: 1px;
-  font-family: $OpenSans;
+  font-family: $font-family;
   font-weight: bold;
   font-size: 25px;
 }
 
 .product-week__label {
-  font-family: $OpenSans;
+  font-family: $font-family;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
@@ -30,7 +30,7 @@
 }
 
 .product-week__desc {
-  font-family: $OpenSans;
+  font-family: $font-family;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
@@ -63,14 +63,14 @@
 }
 
 .product-week__img {
-  margin-bottom: 17px;
+  margin-bottom: 24px;;
 }
 
 .product-week__price {
   display: block;
   margin: 15px 0;
   margin-bottom: 26px;
-  font-family: $OpenSans;
+  font-family: $font-family;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
