@@ -12,3 +12,19 @@ function initMap() {
     icon: image
   });
 }
+
+var nav = document.querySelector('.page-nav');
+var toggle = document.querySelector('.page-nav__toggle');
+
+nav.classList.remove('page-nav--nojs');
+
+toggle.addEventListener('click', function() {
+  if (nav.classList.contains('page-nav--close')) {
+        nav.classList.remove('page-nav--close');
+        nav.classList.add('page-nav--open');
+      } else {
+        nav.classList.add('page-nav--closed');
+        nav.classList.remove('page-nav--open');
+      }
+});
+

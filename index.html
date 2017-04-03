@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Мишка</title>
 
@@ -34,7 +33,6 @@
 <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
 <script src="../node_modules/pixel-glass/script.js"></script>-->
 <!-- // Pixel Glass -->
-  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 
 </head>
 
@@ -100,7 +98,7 @@
   <header class="page-header">
     <div class="container">
 
-      <nav class="page-nav">
+      <nav class="page-nav page-nav--close page-nav--nojs">
 
         <div class="page-nav__logo">
           <a href="index.html">
@@ -324,7 +322,7 @@
 
       <div class="container contacts__map-container">
 
-        <div id="map" class="contacts__map">
+        <div class="contacts__map">
         </div>
 
       </div>
@@ -389,7 +387,9 @@
     <button type="button" class="btn">Добавить</button>
   </div>
 
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
   <script src="js/app.js"></script>
+
 </body>
 
 </html>
