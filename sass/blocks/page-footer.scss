@@ -8,21 +8,20 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
-  margin-left: 35px;
   padding-bottom: 25px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .page-footer__copyright {
-  display: flex;
-  justify-content: center;
   padding-top: 8px;
   padding-bottom: 20px;
-  text-align: center;
+  span {
+    padding-top: 28px;
+  }
 }
 .page-footer__text {
-  align-self: center;
-  margin-left: 15px;
+  display: flex;
+  justify-content: center;
   font-family: $font-family;
   font-weight: bold;
   font-size: 19px;
@@ -30,7 +29,7 @@
   color: $color-black;
   svg {
     margin-top: 12px;
-    margin-left: 10px;
+    margin-left: 21px;
   }
   &:hover {
     svg {
@@ -51,7 +50,7 @@
   display: none;
 }
 .page-footer__social-link {
-  margin-right: 36px;
+  margin: 0 18px;
   &:hover {
     svg {
       fill: $color-light-green;
@@ -92,7 +91,6 @@
       flex-grow: 1;
       display: block;
       align-self: center;
-      width: 20%;
       svg {
         &:hover {
           fill: $color-light-green;
@@ -103,7 +101,7 @@
       }
     }
     &__copyright {
-      width: 28%;
+      width: 31%;
       color: rgba(#000, 0.3);
       cursor: pointer;
     }
@@ -113,10 +111,11 @@
       align-items: center;
       justify-content: flex-end;
       width: 100%;
-      span{
-        margin-top: 6px;
+      span {
+        align-self: baseline;
+        margin-top: 1px;
+        padding-right: 29px;
         display: block;
-        margin-right: 25px;
       }
       svg {
         margin-left: 0;
@@ -127,10 +126,8 @@
 
 @media screen and (min-width: 1150px) {
 
-  .page-footer {
-
-    &__social {
-      flex-grow: 3;
-    }
+  .page-footer__social {
+    flex-grow: 0.3;
   }
+
 }

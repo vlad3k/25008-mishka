@@ -30,7 +30,7 @@
   .main-header {
     z-index: 0;
     position: relative;
-    margin-top: -83px;
+    margin-top: -86px;
     padding-top: 153px;
     min-height: 742px;
     border-top: 1px solid $color-gray;
@@ -59,6 +59,7 @@
 @media screen and (min-width: 1150px) {
 
   .main-header {
+    margin-top: -83px;
     min-height: 743px;
   }
 

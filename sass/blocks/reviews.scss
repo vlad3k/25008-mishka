@@ -44,7 +44,7 @@
 
 .reviews__arrows {
   margin-top: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
   font-size: 0;
 }
 
@@ -143,13 +143,21 @@
 
   .reviews__arrows {
     margin-top: -55px;
-    margin-left: 71%;
+    margin-left: auto;
   }
 
   .reviews__arrow {
     margin: 0;
     width: 87px;
     border: none;
+  }
+
+  .reviews__arrow--left,
+  .reviews__arrow--right {
+    &:after {
+      top: 11px;
+      left: 21%;
+    }
   }
 
   .reviews__btn {
@@ -193,6 +201,12 @@
 
   .reviews__arrows {
     margin-left: 81.5%;
+  }
+
+  .reviews__arrow--left:after,
+  .reviews__arrow--right:after {
+    top: 11px;
+    left: 43%;
   }
 
   .reviews__btn {

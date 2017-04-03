@@ -132,8 +132,8 @@
 }
 
 .knitting-order-list__text {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 14px;
   font-size: 17px;
   line-height: 18px;
   width: 100%;
@@ -181,8 +181,9 @@
 
 .knitting-order-list__textarea {
   display: block;
-  margin-bottom: 14px;
-  padding-right: 20px;
+  margin-bottom: 18px;
+  padding-top: 12px;
+  padding-left: 17px;
   width: 100%;
   height: 142px;
   font-size: 17px;
@@ -272,7 +273,7 @@
     line-height: 18px;
   }
   .knitting-order-list__item--name {
-    margin-bottom: 23px;
+    margin-bottom: 19px;
   }
   .knitting-order-list__label--name {
     padding-top: 0;
@@ -286,6 +287,8 @@
     display: inline-flex;
     padding-left: 18px;
     width: 73%;
+    font-size: 19px;
+    line-height: 18px;
   }
 
 }
@@ -307,6 +310,7 @@
 
   .knitting-order-list__textarea {
     display: inline-flex;
+    margin-bottom: 11px;
     padding-left: 18px;
     width: 82%;
   }

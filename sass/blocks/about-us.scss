@@ -1,6 +1,18 @@
 .about-us {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 26px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: block;
+    height: 23px;
+    width: 100%;
+    background: url(../img/bg-zigzag-line.svg) repeat-x;
+    background-size: contain;
+  }
 }
 
 .about-us__title {
@@ -110,6 +122,10 @@
     padding-top: 49px;
     padding-bottom: 25px;
     box-sizing: border-box;
+    &:before {
+      top: -15px;
+      left: 10px;
+    }
   }
 
   .about-us__title {
@@ -172,6 +188,9 @@
 
   .about-us {
     padding-top: 60px;
+    &:before {
+      top: -21px;
+    }
   }
 
   .about-us__title {

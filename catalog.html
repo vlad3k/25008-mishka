@@ -6,6 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка</title>
+
+    <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url( "./pixel/mishka-catalog-mobile.jpg" );
+  }
+  /* Tablet */
+  @media ( min-width: 760px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url( "./pixel/mishka-catalog-tablet.jpg" );
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 960px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url( "./pixel/mishka-catalog-desktop.jpg" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
+
 </head>
 
 <body class="body">
@@ -62,9 +90,11 @@
 
         <div class="page-nav__logo">
           <a href="index.html">
-            <svg width="85.589" height="35.034">
-              <use xlink:href='#logo-mobile' />
-            </svg>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Mishka">
+            </picture>
           </a>
 
           <button type="button" class="page-nav__toggle">
@@ -119,10 +149,10 @@
 
       </nav>
 
-
     </div>
 
   </header>
+
 
   <main>
 
@@ -247,7 +277,7 @@
 
           <div class="production-process__container">
             <p class="production-process__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <button type="button" class="btn">Сделать заказ</button>
+            <button type="button" class="btn production-process__btn">Сделать заказ</button>
           </div>
 
         </article>

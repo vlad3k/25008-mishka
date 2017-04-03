@@ -32,12 +32,17 @@
   border-top: 1px solid $color-gray;
 }
 
+.page-nav__items-menu1,
+.page-nav__items-menu2 {
+  display: none;
+}
+
 .page-nav__link {
   position: relative;
   display: block;
   margin: 0 auto;
   padding-top: 25px;
-  width: 171px;
+  width: 300px;
   min-height: 78px;
   font-family: $font-family;
   font-weight: bold;
@@ -61,7 +66,33 @@
   svg {
     fill: #d3d2d2;
   }
+  &--catalog,
+  &--knitting,
+  &--basket,
+  &--search {
+  	padding-left: 65px;
+  }
+  &--basket,
+  &--search {
+  	display: flex;
+  	transform: translateX(-43px);
+  }
+  svg {
+    margin-right: 25px;
+  }
+  &--search {
+    svg {
+      padding-top: 6px;
+    }
+  }
+  &--basket {
+    svg {
+      padding-top: 4px;
+    }
+  }
+
 }
+
 
 /*ICON MENU*/
 .page-nav__toggle {
@@ -128,7 +159,6 @@
     order: 0;
     flex-grow: 1;
     padding-left: 0;
-    padding-right: 32%;
     img {
       width: 112px;
       height: 46px;
@@ -147,9 +177,10 @@
     z-index: 1;
     order: 2;
     display: flex;
+    width: 60%;
     .page-nav__link {
       margin-right: 37px;
-      padding-top: 20px;
+      padding-top: 15px;
       font-size: 15px;
       line-height: 24px;
     }
@@ -157,7 +188,7 @@
   .page-nav__items-menu2 {
     order: 1;
     display: flex;
-    margin-left: 10px;
+    flex-wrap: wrap;
   }
   .page-nav__items-tablet {
     z-index: 1;
@@ -170,17 +201,22 @@
     margin-left: 0;
     padding: 0;
     border-top: none;
+    svg {
+      margin-right: 0;
+    }
   }
   .page-nav__link--search {
     margin-right: 30px;
-    padding-top: 36px;
+    padding-top: 30px;
     padding-left: 32px;
     min-width: 84px;
     height: 87px;
     font-size: 0;
     border-left: 1px solid $color-gray;
     border-right: 1px solid $color-gray;
+    transform: none;
     svg {
+      margin: 0;
       fill: #d3d2d2;
       width: 17.6px;
       height: 17.6px;
@@ -188,13 +224,14 @@
   }
   .page-nav__link--basket {
     padding-top: 31px;
+    transform: none;
     span {
       padding-left: 30px;
     }
   }
 
   .page-nav__link--delivery {
-    padding-top: 13px;
+    padding-top: 10px;
     font-family: $font-family;
     font-weight: normal;
     font-size: 15px;
@@ -208,8 +245,6 @@
     order: 1;
     padding: 0;
     padding-top: 10px;
-    min-width: 239px;
-    text-align: center;
     img {
       width: 148px;
       height: 72px;
@@ -218,7 +253,11 @@
 
   .page-nav__items-menu1 {
     order: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 43%;
     .page-nav__link {
+
       margin-right: 0;
       padding-top: 32px;
       padding-right: 37px;
@@ -229,6 +268,10 @@
 
   .page-nav__link--knitting {
     padding-left: 33px;
+  }
+
+  .page-nav__link--delivery {
+    padding-top: 14px;
   }
 
   .page-nav__item--catalog {

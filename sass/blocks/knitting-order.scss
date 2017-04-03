@@ -10,6 +10,7 @@
 }
 
 .knitting-order__title {
+  position: relative;
   margin-bottom: 25px;
   width: 100%;
   font-family: $font-family;
@@ -18,6 +19,15 @@
   line-height: 16px;
   color: $color-light-green;
   text-transform: uppercase;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 60px;
+    width: 71%;
+    height: 1px;
+    background: #63d1bb;
+  }
 }
 
 .knitting-order__type {
@@ -25,7 +35,7 @@
 }
 
 .knitting-order__color {
-  padding-top: 29px;
+  padding-top: 33px;
 }
 
 .knitting-order__name {
@@ -42,6 +52,10 @@
 
 .knitting-order__title--email {
   padding-top: 30px;
+  &:after {
+    top: 41px;
+    left: 81px;
+  }
 }
 
 .knitting-order__title--phone {
@@ -67,10 +81,14 @@
   width: 100%;
 }
 
+.knitting-order__bottom {
+  margin-bottom: 57px;
+}
+
 @media screen and (min-width: 768px) {
 
   .knitting-order__desc {
-    margin-top: 78px;
+    margin-top: 74px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -83,6 +101,9 @@
   .knitting-order__title {
     display: inline-block;
     width: 25%;
+    &:after {
+      display: none;
+    }
 
     &--extra {
       vertical-align: top;
@@ -96,12 +117,12 @@
   }
 
   .knitting-order__name {
-    padding-top: 50px;
-    padding-bottom: 26px;
+    padding-top: 47px;
+    padding-bottom: 30px;
   }
 
   .knitting-order__contacts {
-    padding-top: 50px;
+    padding-top: 45px;
     padding-bottom: 46px;
     background: #f1f1f1;
   }
@@ -111,8 +132,8 @@
   }
 
   .knitting-order__extra {
-    padding-top: 50px;
-    margin-bottom: 38px;
+    padding-top: 52px;
+    margin-bottom: 32px;
   }
 
   .knitting-order__bottom {
@@ -128,10 +149,10 @@
     padding: 0 10px;
     width: 230px;
     height: 52px;
-    margin-left: 25%;
   }
 
   .knitting-order__text {
+    margin-bottom: 0;
     padding-top: 10px;
     font-size: 17px;
     line-height: 30px;
@@ -158,7 +179,7 @@
   }
 
   .knitting-order__btn {
-    margin-left: 175px;
+    margin-left: 179px;
   }
 
 }
