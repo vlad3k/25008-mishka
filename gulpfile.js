@@ -22,14 +22,13 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer({browsers: [
-        "last 2 version",
-      ]}),
-      mqpacker({
-        sort: true
-      })
-    ]))
-    .pipe(gulp.dest("build/css"))
+    autoprefixer({browsers: [
+      "last 2 version",
+    ]}),
+    mqpacker({
+      sort: true
+    })
+  ]))
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))

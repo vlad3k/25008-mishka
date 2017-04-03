@@ -38,14 +38,6 @@
     background-size: cover;
   }
 
-  @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-    .main-header {
-      background: #ffffff url(../img/hero-desktop@2x.jpg) no-repeat center 0;
-      background-size: cover;
-    }
-  }
-
   .main-header__title {
     padding-left: 80px;
     padding-right: 80px;
@@ -54,6 +46,14 @@
     line-height: 50px;
   }
 
+}
+
+@media (min-width: 768px) and (min-resolution: 144dpi),
+(min-width: 768px) and (min-resolution: 1.5dppx) {
+  .main-header {
+    background: #ffffff url(../img/hero-desktop@2x.jpg) no-repeat center 0;
+    background-size: cover;
+  }
 }
 
 @media screen and (min-width: 1150px) {

@@ -115,12 +115,6 @@
     background: url(../img/review@1x.jpg) no-repeat;
   }
 
-  @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-    background: #ffffff url(../img/review@2x.jpg) no-repeat;
-  }
-
-
   .reviews__title {
     width: 72%;
     order: -2;
@@ -167,6 +161,13 @@
     width: 175px;
   }
 
+}
+
+@media (min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  .reviews__container {
+    background: #ffffff url(../img/review@2x.jpg) no-repeat;
+  }
 }
 
 @media screen and (min-width: 1150px) {
